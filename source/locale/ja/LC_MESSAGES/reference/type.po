@@ -1,0 +1,103 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2017, Michael Droettboom, Space Telescope Science
+# Institute
+# This file is distributed under the same license as the Understanding JSON
+# Schema package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Understanding JSON Schema 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-27 15:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/reference/type.rst:8
+msgid "Type-specific keywords"
+msgstr ""
+
+#: ../../source/reference/type.rst:10
+msgid ""
+"The ``type`` keyword is fundamental to JSON Schema.  It specifies the "
+"data type for a schema."
+msgstr ""
+
+#: ../../source/reference/type.rst:13
+msgid "At its core, JSON Schema defines the following basic types:"
+msgstr ""
+
+#: ../../source/reference/type.rst:29
+msgid "`string`"
+msgstr ""
+
+#: ../../source/reference/type.rst:30
+msgid "`numeric`"
+msgstr ""
+
+#: ../../source/reference/type.rst:31
+msgid "`object`"
+msgstr ""
+
+#: ../../source/reference/type.rst:32
+msgid "`array`"
+msgstr ""
+
+#: ../../source/reference/type.rst:33
+msgid "`boolean`"
+msgstr ""
+
+#: ../../source/reference/type.rst:34
+msgid "`null`"
+msgstr ""
+
+#: ../../source/reference/type.rst:36
+msgid ""
+"These types have analogs in most programming languages, though they may "
+"go by different names."
+msgstr ""
+
+#: ../../source/reference/type.rst:98
+msgid "The ``type`` keyword may either be a string or an array:"
+msgstr ""
+
+#: ../../source/reference/type.rst:100
+msgid "If it's a string, it is the name of one of the basic types above."
+msgstr ""
+
+#: ../../source/reference/type.rst:102
+msgid ""
+"If it is an array, it must be an array of strings, where each string is "
+"the name of one of the basic types, and each element is unique. In this "
+"case, the JSON snippet is valid if it matches *any* of the given types."
+msgstr ""
+
+#: ../../source/reference/type.rst:107
+msgid "Here is a simple example of using the ``type`` keyword:"
+msgstr ""
+
+#: ../../source/reference/type.rst:109
+msgid "This is not a number, it is a string containing a number."
+msgstr ""
+
+#: ../../source/reference/type.rst:119
+msgid ""
+"In the following example, we accept strings and numbers, but not "
+"structured data types:"
+msgstr ""
+
+#: ../../source/reference/type.rst:131
+msgid ""
+"For each of these types, there are keywords that only apply to those "
+"types.  For example, numeric types have a way of specifying a numeric "
+"range, that would not be applicable to other types.  In this reference, "
+"these validation keywords are described along with each of their "
+"corresponding types in the following chapters."
+msgstr ""
+

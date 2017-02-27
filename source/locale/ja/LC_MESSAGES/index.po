@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2017, Michael Droettboom, Space Telescope Science
+# Institute
+# This file is distributed under the same license as the Understanding JSON
+# Schema package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Understanding JSON Schema 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-27 15:43+0900\n"
+"PO-Revision-Date: 2017-02-27 16:25+0900\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/index.rst:7
+msgid "Understanding JSON Schema"
+msgstr "JSONスキーマ詳解"
+
+#: ../../source/index.rst:9
+msgid "JSON Schema is a powerful tool for validating the structure of JSON data.  However, learning to use it by reading its specification is like learning to drive a car by looking at its blueprints.  You don't need to know how an internal combustion engine fits together if all you want to do is pick up the groceries.  This book, therefore, aims to be the friendly driving instructor for JSON Schema.  It's for those that want to write it and understand it, but maybe aren't interested in building their own car---er, writing their own JSON Schema validator---just yet."
+msgstr "JSONスキーマはJSONデータの構造を検証するための強力なツールです。しかしながらその仕様を読みながら使い方を覚えるのは設計図を見ながら車の運転を覚えるようなものです。もしあなたが食料品を載せることだけが目的ならば、内燃エンジンがどう適合するかなど知る必要はありません。そういうわけで、この本はJSONスキーマのためのフレンドリーな運転指導者を目指しています。いまのところはJSONスキーマを書いて理解したい人のためのもので、自分の車を造る---独自のJSONスキーマバリデータを書く---ことに関心はありません。"
+
+#: ../../source/index.rst:27
+msgid ""
+"This book describes JSON Schema draft 4.  Earlier versions of JSON Schema"
+" are not completely compatible with the format described here."
+msgstr "この本はJSONスキーマドラフト4について説明しています。JSONスキーマの以前のバージョンは、ここで説明するフォーマットと完全な互換性はありません。"
+
+#: ../../source/index.rst:31
+msgid "**Where to begin?**"
+msgstr "どこから始める？"
+
+#: ../../source/index.rst:33
+msgid ""
+"This book uses some novel `conventions <conventions>` for showing schema "
+"examples and relating JSON Schema to your programming language of choice."
+msgstr "この本はスキーマの例やお好みのプログラミング言語との関連を示すために、新しい `規約 <conventions>` を用います"
+
+#: ../../source/index.rst:37
+msgid "If you're not sure what a schema is, check out `about`."
+msgstr "スキーマが何であるか分からない場合は :ref:`スキーマとは？ <about>` を参照してください"
+
+#: ../../source/index.rst:39
+msgid ""
+"`basics` chapter should be enough to get you started with understanding "
+"the core `reference`."
+msgstr "`基本 <basics>` の章は `JSONスキーマリファレンス <reference>` の核を理解するのには十分なはずです"
+
+#: ../../source/index.rst:42
+msgid ""
+"When you start developing large schemas with many nested and repeated "
+"sections, check out `structuring`."
+msgstr "たくさんのネストやセクションの繰り返しのある巨大なスキーマを作る場合は、`構造化 <structuring>` を参照してください"
+
+#: ../../source/index.rst:45
+msgid ""
+"`json-schema.org <http://json-schema.org>`__ has a number of resources, "
+"including the official specification and tools for working with JSON "
+"Schema from various programming languages."
+msgstr "`json-schema.org <http://json-schema.org>`__ にはJSONスキーマに関する公式の仕様や様々なプログラミング言語からJSONスキーマを操作するツールなどを含む、たくさんのリソースがあります"
+
+#: ../../source/index.rst:49
+msgid ""
+"`jsonschema.net <http://jsonschema.net>`__ is an online application run "
+"your own JSON schemas against example documents.  If you want to try "
+"things out without installing any software, it's a very handy resource."
+msgstr "`jsonschema.net <http://jsonschema.net>`__ はドキュメント例に対して独自のJSONスキーマを実行するオンラインアプリケーションです。ソフトウェアを何もインストールしなくても試せる、非常に便利なリソースです"
+
+#: ../../source/index.rst:56
+msgid "Contents:"
+msgstr "コンテンツ:"
+
+#: ../../source/index.rst:69
+msgid ""
+"There is also a `print version of this document "
+"<http://spacetelescope.github.io/understanding-json-"
+"schema/UnderstandingJSONSchema.pdf>`__."
+msgstr "`このドキュメントの印刷向け版 <http://spacetelescope.github.io/understanding-json-schema/UnderstandingJSONSchema.pdf>`__ もあります。"
+
+#: ../../source/index.rst:79
+msgid ":ref:`genindex`"
+msgstr ""
+
+#: ../../source/index.rst:80
+msgid ":ref:`search`"
+msgstr ""
+

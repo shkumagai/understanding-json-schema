@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2017, Michael Droettboom, Space Telescope Science
+# Institute
+# This file is distributed under the same license as the Understanding JSON
+# Schema package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Understanding JSON Schema 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-27 15:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/credits.rst:2
+msgid "Acknowledgments"
+msgstr ""
+
+#: ../../source/credits.rst:4
+msgid "Michael Droettboom wishes to thank the following contributors:"
+msgstr ""
+
+#: ../../source/credits.rst:6
+msgid "Anders D. Johnson"
+msgstr ""
+
+#: ../../source/credits.rst:7
+msgid "Armand Abric"
+msgstr ""
+
+#: ../../source/credits.rst:8
+msgid "Ben Hutton"
+msgstr ""
+
+#: ../../source/credits.rst:9
+msgid "btubbs"
+msgstr ""
+
+#: ../../source/credits.rst:10
+msgid "Chris Carpenter"
+msgstr ""
+
+#: ../../source/credits.rst:11
+msgid "Christopher Mark Gore"
+msgstr ""
+
+#: ../../source/credits.rst:12
+msgid "David Branner"
+msgstr ""
+
+#: ../../source/credits.rst:13
+msgid "David Worth"
+msgstr ""
+
+#: ../../source/credits.rst:14
+msgid "Erik Bray"
+msgstr ""
+
+#: ../../source/credits.rst:15
+msgid "forevermatt"
+msgstr ""
+
+#: ../../source/credits.rst:16
+msgid "goldaxe"
+msgstr ""
+
+#: ../../source/credits.rst:17
+msgid "Jesse Claven"
+msgstr ""
+
+#: ../../source/credits.rst:18
+msgid "Vincent Jacques"
+msgstr ""
+

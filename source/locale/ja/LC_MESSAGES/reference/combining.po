@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2017, Michael Droettboom, Space Telescope Science
+# Institute
+# This file is distributed under the same license as the Understanding JSON
+# Schema package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Understanding JSON Schema 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-27 15:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/reference/combining.rst:7
+msgid "Combining schemas"
+msgstr ""
+
+#: ../../source/reference/combining.rst:9
+msgid ""
+"JSON Schema includes a few keywords for combining schemas together. Note "
+"that this doesn't necessarily mean combining schemas from multiple files "
+"or JSON trees, though these facilities help to enable that and are "
+"described in `structuring`.  Combining schemas may be as simple as "
+"allowing a value to be validated against multiple criteria at the same "
+"time."
+msgstr ""
+
+#: ../../source/reference/combining.rst:16
+msgid ""
+"For example, in the following schema, the ``anyOf`` keyword is used to "
+"say that the given value may be valid against any of the given "
+"subschemas.  The first subschema requires a string with maximum length 5."
+" The second subschema requires a number with a minimum value of 0.  As "
+"long as a value validates against *either* of these schemas, it is "
+"considered valid against the entire combined schema."
+msgstr ""
+
+#: ../../source/reference/combining.rst:39
+msgid "The keywords used to combine schemas are:"
+msgstr ""
+
+#: ../../source/reference/combining.rst:41
+msgid "`allOf`: Must be valid against *all* of the subschemas"
+msgstr ""
+
+#: ../../source/reference/combining.rst:42
+msgid "`anyOf`: Must be valid against *any* of the subschemas"
+msgstr ""
+
+#: ../../source/reference/combining.rst:43
+msgid "`oneOf`: Must be valid against *exactly one* of the subschemas"
+msgstr ""
+
+#: ../../source/reference/combining.rst:45
+msgid ""
+"All of these keywords must be set to an array, where each item is a "
+"schema."
+msgstr ""
+
+#: ../../source/reference/combining.rst:48
+msgid "In addition, there is:"
+msgstr ""
+
+#: ../../source/reference/combining.rst:50
+msgid "`not`: Must *not* be valid against the given schema"
+msgstr ""
+
+#: ../../source/reference/combining.rst:59
+msgid "allOf"
+msgstr ""
+
+#: ../../source/reference/combining.rst:61
+msgid ""
+"To validate against ``allOf``, the given data must be valid against all "
+"of the given subschemas."
+msgstr ""
+
+#: ../../source/reference/combining.rst:76
+msgid ""
+"Note that it's quite easy to create schemas that are logical "
+"impossibilities with ``allOf``.  The following example creates a schema "
+"that won't validate against anything (since something may not be both a "
+"string and a number at the same time):"
+msgstr ""
+
+#: ../../source/reference/combining.rst:93
+msgid ""
+"It is important to note that the schemas listed in an `allOf`, `anyOf` or"
+" `oneOf` array know nothing of one another.  While it might be "
+"surprising, `allOf` can not be used to \"extend\" a schema to add more "
+"details to it in the sense of object-oriented inheritance.  For example, "
+"say you had a schema for an address in a ``definitions`` section, and "
+"want to extend it to include an address type:"
+msgstr ""
+
+#: ../../source/reference/combining.rst:130
+msgid ""
+"This works, but what if we wanted to restrict the schema so no additional"
+" properties are allowed?  One might try adding the highlighted line "
+"below:"
+msgstr ""
+
+#: ../../source/reference/combining.rst:166
+msgid ""
+"Unfortunately, now the schema will reject *everything*.  This is because "
+"the `additionalProperties` refers to the entire schema.  And that entire "
+"schema includes no properties, and knows nothing about the properties in "
+"the subschemas inside of the `allOf` array."
+msgstr ""
+
+#: ../../source/reference/combining.rst:171
+msgid ""
+"This shortcoming is perhaps one of the biggest surprises of the combining"
+" operations in JSON schema: it does not behave like inheritance in an "
+"object-oriented language.  There are some proposals to address this in "
+"the next version of the JSON schema specification."
+msgstr ""
+
+#: ../../source/reference/combining.rst:183
+msgid "anyOf"
+msgstr ""
+
+#: ../../source/reference/combining.rst:185
+msgid ""
+"To validate against ``anyOf``, the given data must be valid against any "
+"(one or more) of the given subschemas."
+msgstr ""
+
+#: ../../source/reference/combining.rst:209
+msgid "oneOf"
+msgstr ""
+
+#: ../../source/reference/combining.rst:211
+msgid ""
+"To validate against ``oneOf``, the given data must be valid against "
+"exactly one of the given subschemas."
+msgstr ""
+
+#: ../../source/reference/combining.rst:214
+msgid "Not a multiple of either 5 or 3."
+msgstr ""
+
+#: ../../source/reference/combining.rst:214
+msgid "Multiple of both 5 and 3 is rejected."
+msgstr ""
+
+#: ../../source/reference/combining.rst:232
+msgid ""
+"Note that it's possible to \"factor\" out the common parts of the "
+"subschemas.  The following schema is equivalent to the one above:"
+msgstr ""
+
+#: ../../source/reference/combining.rst:252
+msgid "not"
+msgstr ""
+
+#: ../../source/reference/combining.rst:254
+msgid ""
+"This doesn't strictly combine schemas, but it belongs in this chapter "
+"along with other things that help to modify the effect of schemas in some"
+" way.  The ``not`` keyword declares that a instance validates if it "
+"doesn't validate against the given subschema."
+msgstr ""
+
+#: ../../source/reference/combining.rst:259
+msgid ""
+"For example, the following schema validates against anything that is not "
+"a string:"
+msgstr ""
+

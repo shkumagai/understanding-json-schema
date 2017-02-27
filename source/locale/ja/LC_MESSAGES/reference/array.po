@@ -1,0 +1,212 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2017, Michael Droettboom, Space Telescope Science
+# Institute
+# This file is distributed under the same license as the Understanding JSON
+# Schema package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Understanding JSON Schema 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-27 15:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/reference/array.rst:7
+msgid "array"
+msgstr ""
+
+#: ../../source/reference/array.rst:9
+msgid ""
+"Arrays are used for ordered elements.  In JSON, each element in an array "
+"may be of a different type."
+msgstr ""
+
+#: ../../source/reference/array.rst:37
+msgid "Items"
+msgstr ""
+
+#: ../../source/reference/array.rst:39
+msgid ""
+"By default, the elements of the array may be anything at all. However, "
+"it's often useful to validate the items of the array against some schema "
+"as well.  This is done using the ``items`` and ``additionalItems`` "
+"keywords."
+msgstr ""
+
+#: ../../source/reference/array.rst:44
+msgid "There are two ways in which arrays are generally used in JSON:"
+msgstr ""
+
+#: ../../source/reference/array.rst:46
+msgid ""
+"**List validation:** a sequence of arbitrary length where each item "
+"matches the same schema."
+msgstr ""
+
+#: ../../source/reference/array.rst:49
+msgid ""
+"**Tuple validation:** a sequence of fixed length where each item may have"
+" a different schema.  In this usage, the index (or location) of each item"
+" is meaningful as to how the value is interpreted.  (This usage is often "
+"given a whole separate type in some programming languages, such as "
+"Python's ``tuple``)."
+msgstr ""
+
+#: ../../source/reference/array.rst:61
+msgid "List validation"
+msgstr ""
+
+#: ../../source/reference/array.rst:63
+msgid ""
+"List validation is useful for arrays of arbitrary length where each item "
+"matches the same schema.  For this kind of array, set the ``items`` "
+"keyword to a single schema that will be used to validate all of the items"
+" in the array."
+msgstr ""
+
+#: ../../source/reference/array.rst:69
+msgid ""
+"When ``items`` is a single schema, the ``additionalItems`` keyword is "
+"meaningless, and it should not be used."
+msgstr ""
+
+#: ../../source/reference/array.rst:72
+msgid ""
+"In the following example, we define that each item in an array is a "
+"number:"
+msgstr ""
+
+#: ../../source/reference/array.rst:75
+msgid "A single \"non-number\" causes the whole array to be invalid:"
+msgstr ""
+
+#: ../../source/reference/array.rst:75
+msgid "The empty array is always valid:"
+msgstr ""
+
+#: ../../source/reference/array.rst:98
+msgid "Tuple validation"
+msgstr ""
+
+#: ../../source/reference/array.rst:100
+msgid ""
+"Tuple validation is useful when the array is a collection of items where "
+"each has a different schema and the ordinal index of each item is "
+"meaningful."
+msgstr ""
+
+#: ../../source/reference/array.rst:104
+msgid "For example, you may represent a street address such as::"
+msgstr ""
+
+#: ../../source/reference/array.rst:108
+msgid "as a 4-tuple of the form:"
+msgstr ""
+
+#: ../../source/reference/array.rst:110
+msgid "[number, street_name, street_type, direction]"
+msgstr ""
+
+#: ../../source/reference/array.rst:112
+msgid "Each of these fields will have a different schema:"
+msgstr ""
+
+#: ../../source/reference/array.rst:114
+msgid "``number``: The address number.  Must be a number."
+msgstr ""
+
+#: ../../source/reference/array.rst:116
+msgid "``street_name``: The name of the street.  Must be a string."
+msgstr ""
+
+#: ../../source/reference/array.rst:118
+msgid ""
+"``street_type``: The type of street.  Should be a string from a fixed set"
+" of values."
+msgstr ""
+
+#: ../../source/reference/array.rst:121
+msgid ""
+"``direction``: The city quadrant of the address.  Should be a string from"
+" a different set of values."
+msgstr ""
+
+#: ../../source/reference/array.rst:124
+msgid ""
+"To do this, we set the ``items`` keyword to an array, where each item is "
+"a schema that corresponds to each index of the document's array. That is,"
+" an array where the first element validates the first element of the "
+"input array, the second element validates the second element of the input"
+" array, etc."
+msgstr ""
+
+#: ../../source/reference/array.rst:130
+msgid "Here's the example schema:"
+msgstr ""
+
+#: ../../source/reference/array.rst:132
+msgid "\"Drive\" is not one of the acceptable street types:"
+msgstr ""
+
+#: ../../source/reference/array.rst:132
+msgid "This address is missing a street number"
+msgstr ""
+
+#: ../../source/reference/array.rst:132
+msgid "It's okay to not provide all of the items:"
+msgstr ""
+
+#: ../../source/reference/array.rst:132
+msgid "And, by default, it's also okay to add additional items to end:"
+msgstr ""
+
+#: ../../source/reference/array.rst:168
+msgid ""
+"The ``additionalItems`` keyword controls whether it's valid to have "
+"additional items in the array beyond what is defined in the schema. Here,"
+" we'll reuse the example schema above, but set ``additionalItems`` to "
+"``false``, which has the effect of disallowing extra items in the array."
+msgstr ""
+
+#: ../../source/reference/array.rst:174
+msgid "It's ok to not provide all of the items:"
+msgstr ""
+
+#: ../../source/reference/array.rst:174
+msgid "But, since additionalItems is false, we can't provide extra items:"
+msgstr ""
+
+#: ../../source/reference/array.rst:213
+msgid "Length"
+msgstr ""
+
+#: ../../source/reference/array.rst:215
+msgid ""
+"The length of the array can be specified using the ``minItems`` and "
+"``maxItems`` keywords.  The value of each keyword must be a non-negative "
+"number.  These keywords work whether doing `list-validation` or `tuple-"
+"validation`."
+msgstr ""
+
+#: ../../source/reference/array.rst:243
+msgid "Uniqueness"
+msgstr ""
+
+#: ../../source/reference/array.rst:245
+msgid ""
+"A schema can ensure that each of the items in an array is unique. Simply "
+"set the ``uniqueItems`` keyword to ``true``."
+msgstr ""
+
+#: ../../source/reference/array.rst:248
+msgid "The empty array always passes:"
+msgstr ""
+

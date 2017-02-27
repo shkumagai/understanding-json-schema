@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2017, Michael Droettboom, Space Telescope Science
+# Institute
+# This file is distributed under the same license as the Understanding JSON
+# Schema package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Understanding JSON Schema 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-27 15:43+0900\n"
+"PO-Revision-Date: 2017-02-27 18:21+0900\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/about.rst:4
+msgid "What is a schema?"
+msgstr "スキーマとは？"
+
+#: ../../source/about.rst:6
+msgid ""
+"If you've ever used XML Schema, RelaxNG or ASN.1 you probably already "
+"know what a schema is and you can happily skip along to the next section."
+"  If all that sounds like gobbledygook to you, you've come to the right "
+"place.  To define what JSON Schema is, we should probably first define "
+"what JSON is."
+msgstr "もしあなたがXMLスキーマやRelaxNG、ASN.1を使ったことがあるなら、スキーマが何なのかはおそらくご存知なので幸いにも次の節までスキップできます。もしどれもちんぷんかんぷんに聞こえるなら、適切な場所に来ています。JSONスキーマが何であるかを定義するには、まず最初にJSONが何であるかを定義する必要があります。"
+
+#: ../../source/about.rst:12
+msgid ""
+"JSON stands for \"JavaScript Object Notation\", a simple data interchange"
+" format.  It began as a notation for the world wide web. Since JavaScript"
+" exists in most web browsers, and JSON is based on JavaScript, it's very "
+"easy to support there.  However, it has proven useful enough and simple "
+"enough that it is now used in many other contexts that don't involve web "
+"surfing."
+msgstr "JSONは \\\"JavaScript Object Notation\\\" を表す、シンプルなデータ交換フォーマットです。これはワールド・ワイド・ウェブのための表記法として始まりました。JavaScriptはほとんどのウェブブラウザに存在し、JSONはJavaScriptに基づいているのでそれらがサポートするのは簡単です。しかし現在ではウェブサーフィンを伴わない他の多くの状況においても使われるほど十分に簡単で便利であることが証明されています。"
+
+#: ../../source/about.rst:19
+msgid "At its heart, JSON is built on the following data structures:"
+msgstr "その根幹として、JSONは次のデータ構造で構成されています。"
+
+#: ../../source/about.rst:21
+msgid "object::"
+msgstr "オブジェクト"
+
+#: ../../source/about.rst:25
+msgid "array::"
+msgstr "配列"
+
+#: ../../source/about.rst:29
+msgid "number:"
+msgstr "数値"
+
+#: ../../source/about.rst:36
+msgid "string:"
+msgstr "文字列"
+
+#: ../../source/about.rst:42
+msgid "boolean:"
+msgstr "ブール"
+
+#: ../../source/about.rst:49
+msgid "null:"
+msgstr ""
+
+#: ../../source/about.rst:55
+msgid ""
+"These types have analogs in most programming languages, though they may "
+"go by different names."
+msgstr "これらの型は、名前は違うかも知れませんがほどんどの言語で類似のものを持っています。"
+
+#: ../../source/about.rst:116
+msgid ""
+"With these simple data types, all kinds of structured data can be "
+"represented.  With that great flexibility comes great responsibility, "
+"however, as the same concept could be represented in myriad ways.  For "
+"example, you could imagine representing information about a person in "
+"JSON in different ways::"
+msgstr "これらの単純なデータ型で構造化されたあらゆる種類のデータを表現できます。しかし同じ概念を無数の方法で表現できるので、その優れた柔軟性には大きな責任が伴います。たとえば、人物の情報をJSONによって複数のやり方で表現するのを想像してみるとよいでしょう:"
+
+#: ../../source/about.rst:140
+msgid ""
+"Both representations are equally valid, though one is clearly more formal"
+" than the other.  The design of a record will largely depend on its "
+"intended use within the application, so there's no right or wrong answer "
+"here.  However, when an application says \"give me a JSON record for a "
+"person\", it's important to know exactly how that record should be "
+"organized.  For example, we need to know what fields are expected, and "
+"how the values are represented.  That's where JSON Schema comes in.  The "
+"following JSON Schema fragment describes how the second example above is "
+"structured.  Don't worry too much about the details for now.  They are "
+"explained in subsequent chapters."
+msgstr "どちらの表現も等しく有効ですが、一方が他方よりも明らかにフォーマルです。レコードの設計はアプリケーション内で意図された使い方に依存するので、ここには正しい答えも間違った答えもありません。しかしアプリケーションが「人物のJSONレコードをくれ」と言った場合に、レコードがどのように編成されるべきかを正確に知っておくことは重要です。たとえば、私たちは何のフィールドが期待されているか、値をどう表現されるのかを知る必要があります。そこでJSONスキーマの出番です。次のJSONスキーマ断片は前述の２番目の例がどのような構造化を表します。今は詳細についてはあまり心配しないでください。それらは以降の章で説明されています。"
+
+#: ../../source/about.rst:151
+msgid ""
+"By \"validating\" the first example against this schema, you can see that"
+" it fails:"
+msgstr "１番目の例をこのスキーマで検証すると、失敗するのがわかります:"
+
+#: ../../source/about.rst:151
+msgid "However, the second example passes:"
+msgstr "しかし、２番目はパスします:"
+
+#: ../../source/about.rst:192
+msgid ""
+"You may have noticed that the JSON Schema itself is written in JSON. It "
+"is data itself, not a computer program.  It's just a declarative format "
+"for \"describing the structure of other data\".  This is both its "
+"strength and its weakness (which it shares with other similar schema "
+"languages).  It is easy to concisely describe the surface structure of "
+"data, and automate validating data against it.  However, since a JSON "
+"Schema can't contain arbitrary code, there are certain constraints on the"
+" relationships between data elements that can't be expressed.  Any "
+"\"validation tool\" for a sufficiently complex data format, therefore, "
+"will likely have two phases of validation: one at the schema (or "
+"structural) level, and one at the semantic level.  The latter check will "
+"likely need to be implemented using a more general-purpose programming "
+"language."
+msgstr "あなたはJSONスキーマそれ自身がJSONで書かれていることに気づいたかも知れません。それはデータそのものであり、コンピュータプログラムではありません。\\\"他のデータの構造を記述する\\\"ための宣言形式です。これは（他の同様のスキーマ言語と共通の）強さでもあり弱さでもあります。データの表面的構造を簡潔に記述し、それに対するデータの検証を自動化するのは簡単です。しかしJSONスキーマには任意のコードを含めることができないため、表現できないデータ要素間の関係に対する一定の制約があります。そのため、十分に複雑なデータフォーマットの\\\"検証ツール\\\"には、スキーマ（または構造）レベルと意味レベルの２つの検証フェーズがあります。後者のチェックはより汎用的なプログラミング言語を使って実装する必要があります。"
+

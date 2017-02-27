@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2017, Michael Droettboom, Space Telescope Science
+# Institute
+# This file is distributed under the same license as the Understanding JSON
+# Schema package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Understanding JSON Schema 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-27 15:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/reference/regular_expressions.rst:7
+msgid "Regular Expressions"
+msgstr ""
+
+#: ../../source/reference/regular_expressions.rst:9
+msgid ""
+"The :ref:`pattern <pattern>` and `patternProperties` keywords use regular"
+" expressions to express constraints.  The regular expression syntax used "
+"is from JavaScript (`ECMA 262 <http://www.ecma-"
+"international.org/publications/standards/Ecma-262.htm>`__, specifically)."
+" However, that complete syntax is not widely supported, therefore it is "
+"recommended that you stick to the subset of that syntax described below."
+msgstr ""
+
+#: ../../source/reference/regular_expressions.rst:17
+msgid ""
+"A single unicode character (other than the special characters below) "
+"matches itself."
+msgstr ""
+
+#: ../../source/reference/regular_expressions.rst:20
+msgid "``^``: Matches only at the beginning of the string."
+msgstr ""
+
+#: ../../source/reference/regular_expressions.rst:22
+msgid "``$``: Matches only at the end of the string."
+msgstr ""
+
+#: ../../source/reference/regular_expressions.rst:24
+msgid ""
+"``(...)``: Group a series of regular expressions into a single regular "
+"expression."
+msgstr ""
+
+#: ../../source/reference/regular_expressions.rst:27
+msgid ""
+"``|``: Matches either the regular expression preceding or following the "
+"``|`` symbol."
+msgstr ""
+
+#: ../../source/reference/regular_expressions.rst:30
+msgid "``[abc]``: Matches any of the characters inside the square brackets."
+msgstr ""
+
+#: ../../source/reference/regular_expressions.rst:32
+msgid "``[a-z]``: Matches the range of characters."
+msgstr ""
+
+#: ../../source/reference/regular_expressions.rst:34
+msgid "``[^abc]``: Matches any character *not* listed."
+msgstr ""
+
+#: ../../source/reference/regular_expressions.rst:36
+msgid "``[^a-z]``: Matches any character outside of the range."
+msgstr ""
+
+#: ../../source/reference/regular_expressions.rst:38
+msgid ""
+"``+``: Matches one or more repetitions of the preceding regular "
+"expression."
+msgstr ""
+
+#: ../../source/reference/regular_expressions.rst:41
+msgid ""
+"``*``: Matches zero or more repetitions of the preceding regular "
+"expression."
+msgstr ""
+
+#: ../../source/reference/regular_expressions.rst:44
+msgid ""
+"``?``: Matches zero or one repetitions of the preceding regular "
+"expression."
+msgstr ""
+
+#: ../../source/reference/regular_expressions.rst:47
+msgid ""
+"``+?``, ``*?``, ``??``: The ``*``, ``+``, and ``?`` qualifiers are all "
+"greedy; they match as much text as possible. Sometimes this behavior "
+"isn't desired and you want to match as few characters as possible."
+msgstr ""
+
+#: ../../source/reference/regular_expressions.rst:52
+msgid ""
+"``{x}``: Match exactly ``x`` occurrences of the preceding regular "
+"expression."
+msgstr ""
+
+#: ../../source/reference/regular_expressions.rst:55
+msgid ""
+"``{x,y}``: Match at least ``x`` and at most ``y`` occurrences of the "
+"preceding regular expression."
+msgstr ""
+
+#: ../../source/reference/regular_expressions.rst:58
+msgid ""
+"``{x,}``: Match ``x`` occurrences or more of the preceding regular "
+"expression."
+msgstr ""
+
+#: ../../source/reference/regular_expressions.rst:61
+msgid "``{x}?``, ``{x,y}?``, ``{x,}?``: Lazy versions of the above expressions."
+msgstr ""
+
+#: ../../source/reference/regular_expressions.rst:72
+msgid "Example"
+msgstr ""
+
+#: ../../source/reference/regular_expressions.rst:74
+msgid ""
+"The following example matches a simple North American telephone number "
+"with an optional area code:"
+msgstr ""
+

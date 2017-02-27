@@ -97,6 +97,9 @@ highlight_language = 'javascript'
 # If true, keep warnings as "system message" paragraphs in the built documents.
 #keep_warnings = False
 
+locale_dirs = ['locale/']
+gettext_compact = False
+
 
 # -- Options for HTML output ---------------------------------------------------
 

@@ -1,0 +1,92 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2017, Michael Droettboom, Space Telescope Science
+# Institute
+# This file is distributed under the same license as the Understanding JSON
+# Schema package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Understanding JSON Schema 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-27 15:43+0900\n"
+"PO-Revision-Date: 2017-02-27 17:31+0900\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/conventions.rst:4
+msgid "Conventions used in this book"
+msgstr "本書の規約"
+
+#: ../../source/conventions.rst:7
+msgid "Language-specific notes"
+msgstr "言語別の注釈"
+
+#: ../../source/conventions.rst:9
+msgid ""
+"The names of the basic types in JavaScript and JSON can be confusing when"
+" coming from another dynamic language.  I'm a Python programmer by day, "
+"so I've notated here when the names for things are different from what "
+"they are in Python, and any other Python-specific advice for using JSON "
+"and JSON Schema.  I'm by no means trying to create a Python bias to this "
+"book, but it is what I know, so I've started there. In the long run, I "
+"hope this book will be useful to programmers of all stripes, so if you're"
+" interested in translating the Python references into Algol-68 or any "
+"other language you may know, pull requests are welcome!"
+msgstr "JavaScriptやJSONの基本型の名称は、他の動的言語から来たとき混乱することがあります。私はいつもはPythonプログラマです。なので、物の名前がPythonと異なっているときにはここに表記しましたし、JSONやJSONスキーマを使うにあたってのPython固有のアドバイスもあります。決してこの本にPythonバイアスを作ろうと思っているわけではなく、私の知っているものなので、そこから始めました。長期的にはすべてのプログラマにとって有益であることを願っています。なので、PythonのリファレンスをAlgol-68や他のあなたが知る言語に翻訳することに興味があるならば、プルリクエストは歓迎します！"
+
+#: ../../source/conventions.rst:20
+msgid ""
+"The language-specific sections are shown with tabs for each language. "
+"Once you choose a language, that choice will be remembered as you read on"
+" from page to page."
+msgstr "言語別セクションはそれぞれの言語がタブで表示されます。一度言語を選択すると、その選択肢はあなたの呼んだページ毎に記憶されます。"
+
+#: ../../source/conventions.rst:24
+msgid ""
+"For example, here's a language-specific section with advice on using JSON"
+" in a few different languages:"
+msgstr "たとえばこれは、幾つかの異なる言語でJSONを使う際のアドバイス付きの言語別セクションです。"
+
+#: ../../source/conventions.rst:38
+msgid "Examples"
+msgstr "例"
+
+#: ../../source/conventions.rst:40
+msgid ""
+"There are many examples throughout this book, and they all follow the "
+"same format.  At the beginning of each example is a short JSON schema, "
+"illustrating a particular principle, followed by short JSON snippets that"
+" are either valid or invalid against that schema.  Valid examples are in "
+"green, with a checkmark.  Invalid examples are in red, with a cross.  "
+"Often there are comments in between to explain why something is or isn't "
+"valid."
+msgstr "本書を通じて多くの例があり、それらは同じフォーマットに従います。それぞれの例の先頭は短いJSONスキーマで、特定の原理を説明していて、そのスキーマに対して有効または無効な短いJSONスニペットが続きます。有効な例は緑で、チェックマークが付きます。無効な例は赤で、バツ印が付きます。多くの場合、それの何が正しいか正しくないかを説明するコメントが付きます。"
+
+#: ../../source/conventions.rst:49
+msgid ""
+"These examples are tested automatically whenever the book is built, so "
+"hopefully they are not just helpful, but also correct!"
+msgstr "これらの例は本がビルドされる度に自動的にテストされるので、たぶん有用なだけでなく正しいです。"
+
+#: ../../source/conventions.rst:52
+msgid "For example, here's a snippet illustrating how to use the ``number`` type:"
+msgstr "たとえば、これは ``number`` タイプの使い方を説明するスニペットです:"
+
+#: ../../source/conventions.rst:55
+msgid "Simple floating point number:"
+msgstr "単純な浮動小数点数:"
+
+#: ../../source/conventions.rst:55
+msgid "Exponential notation also works:"
+msgstr "指数表記も動作します:"
+
+#: ../../source/conventions.rst:55
+msgid "Numbers as strings are rejected:"
+msgstr "文字列としての数字は拒否されます:"
+

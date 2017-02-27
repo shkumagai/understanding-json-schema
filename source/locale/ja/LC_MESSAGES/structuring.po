@@ -1,0 +1,215 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2017, Michael Droettboom, Space Telescope Science
+# Institute
+# This file is distributed under the same license as the Understanding JSON
+# Schema package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Understanding JSON Schema 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-27 15:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/structuring.rst:7
+msgid "Structuring a complex schema"
+msgstr ""
+
+#: ../../source/structuring.rst:9
+msgid ""
+"When writing computer programs of even moderate complexity, it's commonly"
+" accepted that \"structuring\" the program into reusable functions is "
+"better than copying-and-pasting duplicate bits of code everywhere they "
+"are used.  Likewise in JSON Schema, for anything but the most trivial "
+"schema, it's really useful to structure the schema into parts that can be"
+" reused in a number of places.  This chapter will present some practical "
+"examples that use the tools available for reusing and structuring "
+"schemas."
+msgstr ""
+
+#: ../../source/structuring.rst:19
+msgid "Reuse"
+msgstr ""
+
+#: ../../source/structuring.rst:21
+msgid ""
+"For this example, let's say we want to define a customer record, where "
+"each customer may have both a shipping and a billing address. Addresses "
+"are always the same---they have a street address, city and state---so we "
+"don't want to duplicate that part of the schema everywhere we want to "
+"store an address.  Not only does it make the schema more verbose, but it "
+"makes updating it in the future more difficult.  If our imaginary company"
+" were to start international business in the future and we wanted to add "
+"a country field to all the addresses, it would be better to do this in a "
+"single place rather than everywhere that addresses are used."
+msgstr ""
+
+#: ../../source/structuring.rst:33
+msgid "This is part of the draft 4 spec only, and does not exist in draft 3."
+msgstr ""
+
+#: ../../source/structuring.rst:35
+msgid "So let's start with the schema that defines an address::"
+msgstr ""
+
+#: ../../source/structuring.rst:47
+msgid ""
+"Since we are going to reuse this schema, it is customary (but not "
+"required) to put it in the parent schema under a key called "
+"``definitions``::"
+msgstr ""
+
+#: ../../source/structuring.rst:68
+msgid ""
+"We can then refer to this schema snippet from elsewhere using the "
+"``$ref`` keyword.  The easiest way to describe ``$ref`` is that it gets "
+"logically replaced with the thing that it points to.  So, to refer to the"
+" above, we would include::"
+msgstr ""
+
+#: ../../source/structuring.rst:75
+msgid ""
+"The value of ``$ref`` is a string in a format called `JSON Pointer "
+"<https://tools.ietf.org/html/rfc6901>`__."
+msgstr ""
+
+#: ../../source/structuring.rst:79
+msgid ""
+"JSON Pointer aims to serve the same purpose as `XPath "
+"<http://www.w3.org/TR/xpath/>`_ from the XML world, but it is much "
+"simpler."
+msgstr ""
+
+#: ../../source/structuring.rst:83
+msgid ""
+"The pound symbol (``#``) refers to the current document, and then the "
+"slash (``/``) separated keys thereafter just traverse the keys in the "
+"objects in the document.  Therefore, in our example "
+"``\"#/definitions/address\"`` means:"
+msgstr ""
+
+#: ../../source/structuring.rst:88
+msgid "go to the root of the document"
+msgstr ""
+
+#: ../../source/structuring.rst:89
+msgid "find the value of the key ``\"definitions\"``"
+msgstr ""
+
+#: ../../source/structuring.rst:90
+msgid "within that object, find the value of the key ``\"address\"``"
+msgstr ""
+
+#: ../../source/structuring.rst:92
+msgid ""
+"``$ref`` can also be a relative or absolute URI, so if you prefer to "
+"include your definitions in separate files, you can also do that.  For "
+"example::"
+msgstr ""
+
+#: ../../source/structuring.rst:98
+msgid ""
+"would load the address schema from another file residing alongside this "
+"one."
+msgstr ""
+
+#: ../../source/structuring.rst:101
+msgid ""
+"Now let's put this together and use our address schema to create a schema"
+" for a customer:"
+msgstr ""
+
+#: ../../source/structuring.rst:145
+msgid "The id property"
+msgstr ""
+
+#: ../../source/structuring.rst:147
+msgid "The ``id`` property serves two purposes:"
+msgstr ""
+
+#: ../../source/structuring.rst:149
+msgid "It declares a unique identifier for the schema."
+msgstr ""
+
+#: ../../source/structuring.rst:151
+msgid "It declares a base URL against which ``$ref`` URLs are resolved."
+msgstr ""
+
+#: ../../source/structuring.rst:153
+msgid ""
+"It is best practice that ``id`` is a URL, preferably in a domain that you"
+" control.  For example, if you own the ``foo.bar`` domain, and you had a "
+"schema for addresses, you may set its ``id`` as follows::"
+msgstr ""
+
+#: ../../source/structuring.rst:159
+msgid ""
+"This provides a unique identifier for the schema, as well as, in most "
+"cases, indicating where it may be downloaded."
+msgstr ""
+
+#: ../../source/structuring.rst:162
+msgid ""
+"But be aware of the second purpose of the ``id`` property: that it "
+"declares a base URL for relative ``$ref`` URLs elsewhere in the file. For"
+" example, if you had::"
+msgstr ""
+
+#: ../../source/structuring.rst:168
+msgid ""
+"in the same file, a JSON schema validation library would fetch "
+"``person.json`` from ``http://foo.bar/schemas/person.json``, even if "
+"``address.json`` was loaded from the local filesystem."
+msgstr ""
+
+#: ../../source/structuring.rst:173
+msgid "Extending"
+msgstr ""
+
+#: ../../source/structuring.rst:175
+msgid ""
+"The power of ``$ref`` really shines when it is combined with the "
+"combining keywords ``allOf``, ``anyOf`` and ``oneOf`` (see "
+":ref:`combining`)."
+msgstr ""
+
+#: ../../source/structuring.rst:179
+msgid ""
+"Let's say that for shipping address, we want to know whether the address "
+"is a residential or business address, because the shipping method used "
+"may depend on that.  For the billing address, we don't want to store that"
+" information, because it's not applicable."
+msgstr ""
+
+#: ../../source/structuring.rst:184
+msgid "To handle this, we'll update our definition of shipping address::"
+msgstr ""
+
+#: ../../source/structuring.rst:188
+msgid ""
+"to instead use an ``allOf`` keyword entry combining both the core address"
+" schema definition and an extra schema snippet for the address type::"
+msgstr ""
+
+#: ../../source/structuring.rst:207
+msgid "Tying this all together,"
+msgstr ""
+
+#: ../../source/structuring.rst:209
+msgid "This fails, because it's missing an address type:"
+msgstr ""
+
+#: ../../source/structuring.rst:260
+msgid ""
+"From these basic pieces, it's possible to build very powerful "
+"constructions without a lot of duplication."
+msgstr ""
+

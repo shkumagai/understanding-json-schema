@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2013-2017, Michael Droettboom, Space Telescope Science
+# Institute
+# This file is distributed under the same license as the Understanding JSON
+# Schema package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Understanding JSON Schema 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-27 15:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+
+#: ../../source/basics.rst:4
+msgid "The basics"
+msgstr ""
+
+#: ../../source/basics.rst:6
+msgid ""
+"In :ref:`about`, we described what a schema is, and hopefully justified "
+"the need for schema languages.  Here, we proceed to write a simple JSON "
+"Schema."
+msgstr ""
+
+#: ../../source/basics.rst:11
+msgid "Hello, World!"
+msgstr ""
+
+#: ../../source/basics.rst:13
+msgid ""
+"When learning any new language, it's often helpful to start with the "
+"simplest thing possible.  In JSON Schema, an empty object is a completely"
+" valid schema that will accept any valid JSON."
+msgstr ""
+
+#: ../../source/basics.rst:17
+msgid "This accepts anything, as long as it's valid JSON"
+msgstr ""
+
+#: ../../source/basics.rst:29
+msgid "The type keyword"
+msgstr ""
+
+#: ../../source/basics.rst:31
+msgid ""
+"Of course, we wouldn't be using JSON Schema if we wanted to just accept "
+"any JSON document.  The most common thing to do in a JSON Schema is to "
+"restrict to a specific type.  The ``type`` keyword is used for that."
+msgstr ""
+
+#: ../../source/basics.rst:38
+msgid ""
+"When this book refers to JSON Schema \"keywords\", it means the \"key\" "
+"part of the key/value pair in an object.  Most of the work of writing a "
+"JSON Schema involves mapping a special \"keyword\" to a value within an "
+"object."
+msgstr ""
+
+#: ../../source/basics.rst:43
+msgid "For example, in the following, only strings are accepted:"
+msgstr ""
+
+#: ../../source/basics.rst:54
+msgid "The ``type`` keyword is described in more detail in `type`."
+msgstr ""
+
+#: ../../source/basics.rst:57
+msgid "Declaring a JSON Schema"
+msgstr ""
+
+#: ../../source/basics.rst:59
+msgid ""
+"Since JSON Schema is itself JSON, it's not always easy to tell when "
+"something is JSON Schema or just an arbitrary chunk of JSON.  The "
+"``$schema`` keyword is used to declare that something is JSON Schema. "
+"It's generally good practice to include it, though it is not required."
+msgstr ""
+
+#: ../../source/basics.rst:65
+msgid ""
+"For brevity, the ``$schema`` keyword isn't included in most of the "
+"examples in this book, but it should always be used in the real world."
+msgstr ""
+
+#: ../../source/basics.rst:73
+msgid ""
+"You can also use this keyword to declare which version of the JSON Schema"
+" specification that the schema is written to.  See `schema` for more "
+"information."
+msgstr ""
+
+#: ../../source/basics.rst:78
+msgid "Declaring a unique identifier"
+msgstr ""
+
+#: ../../source/basics.rst:80
+msgid ""
+"It is also best practice to include an ``id`` property as a unique "
+"identifier for each schema.  For now, just set it to a URL at a domain "
+"you control, for example::"
+msgstr ""
+
+#: ../../source/basics.rst:86
+msgid "The details of `id` become more apparent when you start `structuring`."
+msgstr ""
+
