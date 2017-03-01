@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Understanding JSON Schema 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:43+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-02-28 10:05+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,40 +21,40 @@ msgstr ""
 
 #: ../../source/basics.rst:4
 msgid "The basics"
-msgstr ""
+msgstr "基本"
 
 #: ../../source/basics.rst:6
 msgid ""
 "In :ref:`about`, we described what a schema is, and hopefully justified "
 "the need for schema languages.  Here, we proceed to write a simple JSON "
 "Schema."
-msgstr ""
+msgstr "`about` でスキーマとは何かについて説明したので、スキーマ言語の必要性については納得してもらえたと思います。ここでは簡単なJSONスキーマを作成します。"
 
 #: ../../source/basics.rst:11
 msgid "Hello, World!"
-msgstr ""
+msgstr "Hello, World!"
 
 #: ../../source/basics.rst:13
 msgid ""
 "When learning any new language, it's often helpful to start with the "
 "simplest thing possible.  In JSON Schema, an empty object is a completely"
 " valid schema that will accept any valid JSON."
-msgstr ""
+msgstr "何でも新しい言語を学ぶときには、可能な限り簡単なことから始めると役に立ちます。JSONスキーマでは、空のオブジェクトは有効なJSONをすべて受け入れる完全に有効なスキーマです。"
 
 #: ../../source/basics.rst:17
 msgid "This accepts anything, as long as it's valid JSON"
-msgstr ""
+msgstr "これは、有効なJSONである限り何でも受け入れます。"
 
 #: ../../source/basics.rst:29
 msgid "The type keyword"
-msgstr ""
+msgstr "typeキーワード"
 
 #: ../../source/basics.rst:31
 msgid ""
 "Of course, we wouldn't be using JSON Schema if we wanted to just accept "
 "any JSON document.  The most common thing to do in a JSON Schema is to "
 "restrict to a specific type.  The ``type`` keyword is used for that."
-msgstr ""
+msgstr "もちろんもしJSONドキュメントを受け入れたいだけならば、JSONスキーマは使いません。JSONスキーマでもっとも一般的なのは特定の型に制限することです。これには ``type`` キーワードが使われます。"
 
 #: ../../source/basics.rst:38
 msgid ""
