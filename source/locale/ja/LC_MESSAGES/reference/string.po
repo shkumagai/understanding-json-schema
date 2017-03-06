@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Understanding JSON Schema 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:43+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-03-06 14:19+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,32 +21,32 @@ msgstr ""
 
 #: ../../source/reference/string.rst:7
 msgid "string"
-msgstr ""
+msgstr "文字列"
 
 #: ../../source/reference/string.rst:9
 msgid ""
 "The ``string`` type is used for strings of text.  It may contain Unicode "
 "characters."
-msgstr ""
+msgstr "文字列には ``string`` 型が使われます。これにはユニコード文字も含められます。"
 
 #: ../../source/reference/string.rst:19
 msgid "Unicode characters:"
-msgstr ""
+msgstr "ユニコード文字:"
 
 #: ../../source/reference/string.rst:40
 msgid "Length"
-msgstr ""
+msgstr "長さ"
 
 #: ../../source/reference/string.rst:42
 msgid ""
 "The length of a string can be constrained using the ``minLength`` and "
 "``maxLength`` keywords.  For both keywords, the value must be a non-"
 "negative number."
-msgstr ""
+msgstr "文字列の長さは ``minLength`` と ``maxLength`` キーワードを使って強制できます。どちらのキーワードも、値は正の数値でなければなりません。"
 
 #: ../../source/reference/string.rst:67
 msgid "Regular Expressions"
-msgstr ""
+msgstr "正規表現"
 
 #: ../../source/reference/string.rst:71
 msgid ""
@@ -55,7 +55,7 @@ msgid ""
 "JavaScript (`ECMA 262 <http://www.ecma-"
 "international.org/publications/standards/Ecma-262.htm>`__ specifically)."
 "  See `regular-expressions` for more information."
-msgstr ""
+msgstr "``pattern`` キーワードは文字列を特定の正規表現に制限するのに使われます。正規表現のシンタックスはJavaScirpt（具体的には `ECMA 262 <http://www.ecma-international.org/publications/standards/Ecma-262.htm>`__）で定義された構文です。詳しくは `regular-expressions` を参照してください。"
 
 #: ../../source/reference/string.rst:78
 msgid ""
@@ -66,17 +66,17 @@ msgid ""
 "is simply ``\"p\"``.  Therefore, it is usually less confusing, as a "
 "matter of course, to surround the regular expression in ``^...$``, for "
 "example, ``\"^p$\"``, unless there is a good reason not to do so."
-msgstr ""
+msgstr "正規表現を定義する時は、その式が文字列のなかのどこにマッチしてもその文字列は有効と見なされるということに注意しておくのが大切です。たとえば正規表現 ``\"p\"`` は、 ``\"p\"`` のような単純な文字列だけでなく ``\"apple\"`` のような ``p`` を含む任意の文字列にもマッチします。そのため正当な理由がない限り、 ``\"^p$\"`` のようにして正規表現を ``\"^...$\"`` で囲んで混乱しないようにするのが当たり前になっています。"
 
 #: ../../source/reference/string.rst:87
 msgid ""
 "The following example matches a simple North American telephone number "
 "with an optional area code:"
-msgstr ""
+msgstr "次の例は単純な、北米の任意の地域番号付き電話番号にマッチします:"
 
 #: ../../source/reference/string.rst:112
 msgid "Format"
-msgstr ""
+msgstr "フォーマット"
 
 #: ../../source/reference/string.rst:114
 msgid ""
@@ -84,13 +84,13 @@ msgid ""
 "kinds of string values that are commonly used.  This allows values to be "
 "constrained beyond what the other tools in JSON Schema, including "
 "`regular-expressions` can do."
-msgstr ""
+msgstr "``format`` キーワードは一般的に使われているある種の文字列値について、基本の意味的な検証を可能にします。これによって値に対して、正規表現を含めたJSONスキーマにおける他のツールができること以上の制約が可能になります。"
 
 #: ../../source/reference/string.rst:121
 msgid ""
 "JSON Schema implementations are not required to implement this part of "
 "the specification, and many of them do not."
-msgstr ""
+msgstr "JSONスキーマ実装の実装ではこの部分の仕様の実装は必須ではなく、多くは実装していません。"
 
 #: ../../source/reference/string.rst:124
 msgid ""
@@ -100,51 +100,51 @@ msgid ""
 "exchanging the JSON documents also exchange information about the custom "
 "format types.  A JSON Schema validator will ignore any format type that "
 "it does not understand."
-msgstr ""
+msgstr "JSONスキーマ仕様ではネットワーキング関連のフォーマットに偏りがあり、これらはほとんどWebテクノロジーの遺産です。ただし、JSONドキュメントを交換する当事者がカスタムフォーマット型に関する情報を交換する限り、カスタムフォーマットも使えます。JSONスキーマバリデータは、解釈できないフォーマットタイプは無視します。"
 
 #: ../../source/reference/string.rst:132
 msgid "Built-in formats"
-msgstr ""
+msgstr "組み込みフォーマット"
 
 #: ../../source/reference/string.rst:134
 msgid ""
 "The following is the list of formats specified in the JSON Schema "
 "specification."
-msgstr ""
+msgstr "JSONスキーマ仕様に含まれているフォーマットの一覧は次のとおりです。"
 
 #: ../../source/reference/string.rst:137
 msgid ""
 "``\"date-time\"``: Date representation, as defined by `RFC 3339, section "
 "5.6 <http://tools.ietf.org/html/rfc3339>`_."
-msgstr ""
+msgstr "``\"date-time\"``: `RFC 3339, 5.6節 <http://tools.ietf.org/html/rfc3339>`_ で定義されている日付表現。"
 
 #: ../../source/reference/string.rst:140
 msgid ""
 "``\"email\"``: Internet email address, see `RFC 5322, section 3.4.1 "
 "<http://tools.ietf.org/html/rfc5322>`_."
-msgstr ""
+msgstr "``\"email\"``: インターネットメールアドレス。 `RFC 5322, 3.4.1節 <http://tools.ietf.org/html/rfc5322>`_ を参照ください。"
 
 #: ../../source/reference/string.rst:143
 msgid ""
 "``\"hostname\"``: Internet host name, see `RFC 1034, section 3.1 "
 "<http://tools.ietf.org/html/rfc1034>`_."
-msgstr ""
+msgstr "``\"hostname\"``: インターネットホスト名。 `RFC 1034, 3.1節 <http://tools.ietf.org/html/rfc1034>`_ を参照ください。"
 
 #: ../../source/reference/string.rst:146
 msgid ""
 "``\"ipv4\"``: IPv4 address, according to dotted-quad ABNF syntax as "
 "defined in `RFC 2673, section 3.2 <http://tools.ietf.org/html/rfc2673>`_."
-msgstr ""
+msgstr "``\"ipv4\"``: `RFC 2673, 3.2節 <http://tools.ietf.org/html/rfc2763>`_ で定義されている、ドット区切り４つひと組のABNF記法に準拠したIPv4アドレス。"
 
 #: ../../source/reference/string.rst:150
 msgid ""
 "``\"ipv6\"``: IPv6 address, as defined in `RFC 2373, section 2.2 "
 "<http://tools.ietf.org/html/rfc2373>`_."
-msgstr ""
+msgstr "``\"IPv6\"``: `RFC 2373, 2.2節 <http://tools.ietf.org/html/rfc2373>`_ で定義されているIPv6アドレス。"
 
 #: ../../source/reference/string.rst:153
 msgid ""
 "``\"uri\"``: A universal resource identifier (URI), according to `RFC3986"
 " <http://tools.ietf.org/html/rfc3986>`_."
-msgstr ""
+msgstr "``\"uri\"``: `RFC 3986 <http://tools.ietf.org/html/rfc3986>`_ に準拠した汎用リソース識別子（URI）。"
 

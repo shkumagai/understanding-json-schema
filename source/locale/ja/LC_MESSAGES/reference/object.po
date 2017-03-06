@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Understanding JSON Schema 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:43+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-03-06 17:34+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,22 +21,34 @@ msgstr ""
 
 #: ../../source/reference/object.rst:7
 msgid "object"
-msgstr ""
+msgstr "オブジェクト"
 
 #: ../../source/reference/object.rst:9
 msgid ""
 "Objects are the mapping type in JSON.  They map \"keys\" to \"values\". "
 "In JSON, the \"keys\" must always be strings.  Each of these pairs is "
 "conventionally referred to as a \"property\"."
-msgstr ""
+msgstr "オブジェクトはJSONにおけるマップ型です。\"キー\"を\"値\"にマップします。JSONでは\"キー\"は常に文字列でなければなりません。これらの組は慣習的に\"プロパティ\"と呼ばれます。"
+
+#: ../../source/reference/object.rst:15
+msgid ""
+"In Python, \"objects\" are analogous to the ``dict`` type.  An "
+"important difference, however, is that while Python dictionaries "
+"may use anything hashable as a key, in JSON all the keys "
+"must be strings. "
+"Try not to be confused by the two uses of the word \"object\" here: "
+"Python uses the word ``object`` to mean the generic base class for "
+"everything, whereas in JSON it is used only to mean a mapping from "
+"string keys to values."
+msgstr "Pythonの場合"
 
 #: ../../source/reference/object.rst:36
 msgid "Using non-strings as keys is invalid JSON:"
-msgstr ""
+msgstr "非文字列をキーとして使うのは不正なJSONです:"
 
 #: ../../source/reference/object.rst:78
 msgid "Properties"
-msgstr ""
+msgstr "プロパティ"
 
 #: ../../source/reference/object.rst:80
 msgid ""
@@ -44,29 +56,29 @@ msgid ""
 "``properties`` keyword.  The value of ``properties`` is an object, where "
 "each key is the name of a property and each value is a JSON schema used "
 "to validate that property."
-msgstr ""
+msgstr "オブジェクトに対するプロパティ（キー・バリューペア）は ``properties`` キーワードを使って定義します。 ``properties`` の値は、各キーがプロパティの名前で、それぞれの値はそのプロパティを検証するためのJSONスキーマです。"
 
 #: ../../source/reference/object.rst:85
 msgid ""
 "For example, let's say we want to define a simple schema for an address "
 "made up of a number, street name and street type:"
-msgstr ""
+msgstr "たとえば番地、通りの名前、通りの種類からなる住所用の単純なスキーマを定義するとしましょう:"
 
 #: ../../source/reference/object.rst:88
 msgid "If we provide the number in the wrong type, it is invalid:"
-msgstr ""
+msgstr "間違った型の番号を指定した場合は無効です:"
 
 #: ../../source/reference/object.rst:88
 msgid "By default, leaving out properties is valid.  See required."
-msgstr ""
+msgstr "デフォルトではプロパティの省略は有効です。 `required` を参照してください。"
 
 #: ../../source/reference/object.rst:88
 msgid "By extension, even an empty object is valid:"
-msgstr ""
+msgstr "拡張によって、空のオブジェクトも有効です:"
 
 #: ../../source/reference/object.rst:88
 msgid "By default, providing additional properties is valid:"
-msgstr ""
+msgstr "デフォルトでは追加のプロパティの指定は有効です:"
 
 #: ../../source/reference/object.rst:116
 msgid ""
@@ -74,85 +86,85 @@ msgid ""
 "extra stuff, that is, properties whose names are not listed in the "
 "``properties`` keyword.  By default any additional properties are "
 "allowed."
-msgstr ""
+msgstr "``additionalProperties`` キーワードは余分なもの、つまりプロパティのキーワードに記述されていないプロパティの処理を制御するために使います。デフォルトでは追加のプロパティは許可されています。"
 
 #: ../../source/reference/object.rst:121
 msgid ""
 "The ``additionalProperties`` keyword may be either a boolean or an "
 "object.  If ``additionalProperties`` is a boolean and set to ``false``, "
 "no additional properties will be allowed."
-msgstr ""
+msgstr "``additionalProperties`` はブールまたはオブジェクトのいずれかを指定します。 ``additionalProperties`` がブールで ``false`` が設定されている場合、追加のプロパティは許可されません。"
 
 #: ../../source/reference/object.rst:125
 msgid ""
 "Reusing the example above, but this time setting ``additionalProperties``"
 " to ``false``."
-msgstr ""
+msgstr "上の例を再利用しますが、今度は ``additionalProperties`` の設定を ``false`` にします。"
 
 #: ../../source/reference/object.rst:128
 msgid ""
 "Since additionalProperties is false, this extra property \"direction\" "
 "makes the object invalid:"
-msgstr ""
+msgstr "``additionalProperties`` が ``false`` なので、追加のプロパティ\"direction\"はオブジェクトを無効なものにします:"
 
 #: ../../source/reference/object.rst:148
 msgid ""
 "If ``additionalProperties`` is an object, that object is a schema that "
 "will be used to validate any additional properties not listed in "
 "``properties``."
-msgstr ""
+msgstr "``additionalProperties`` がオブジェクトの場合、そのオブジェクトは ``properties`` にリストされていない追加のプロパティを検証するためのスキーマです。"
 
 #: ../../source/reference/object.rst:151
 msgid ""
 "For example, one can allow additional properties, but only if they are "
 "each a string:"
-msgstr ""
+msgstr "たとえば、追加のプロパティは許可しますが、それが文字列である場合に限定します:"
 
 #: ../../source/reference/object.rst:154
 msgid "This is valid, since the additional property's value is a string:"
-msgstr ""
+msgstr "追加プロパティの値が文字列なので、これは有効です:"
 
 #: ../../source/reference/object.rst:154
 msgid "This is invalid, since the additional property's value is not a string:"
-msgstr ""
+msgstr "追加プロパティの値が文字列ではないので、これは無効です:"
 
 #: ../../source/reference/object.rst:186
 msgid "Required Properties"
-msgstr ""
+msgstr "必須プロパティ"
 
 #: ../../source/reference/object.rst:188
 msgid ""
 "By default, the properties defined by the ``properties`` keyword are not "
 "required.  However, one can provide a list of required properties using "
 "the ``required`` keyword."
-msgstr ""
+msgstr "デフォルトでは、プロパティが ``properties`` キーワードによって定義されることは必須ではありません。しかし ``required`` キーワードを使って必須プロパティを指定できます。"
 
 #: ../../source/reference/object.rst:192
 msgid ""
 "The ``required`` keyword takes an array of one or more strings.  Each of "
 "these strings must be unique."
-msgstr ""
+msgstr "``required`` キーワードは、要素が１つ以上の文字列の配列を取ります。これらの文字列はそれぞれユニークでなければなりません。"
 
 #: ../../source/reference/object.rst:195
 msgid ""
 "In the following example schema defining a user record, we require that "
 "each user has a name and e-mail address, but we don't mind if they don't "
 "provide their address or telephone number:"
-msgstr ""
+msgstr "ユーザレコードを定義している次のスキーマ例では、各ユーザは名前とメールアドレスは必須ですが、住所や電話番号が設定されていなくても気にしません:"
 
 #: ../../source/reference/object.rst:199
 msgid ""
 "Providing extra properties is fine, even properties not defined in the "
 "schema:"
-msgstr ""
+msgstr "スキーマに定義されていないプロパティであっても、追加のプロパティを指定することに問題はありません:"
 
 #: ../../source/reference/object.rst:199
 msgid "Missing the required \"email\" property makes the JSON document invalid:"
-msgstr ""
+msgstr "必須の\"email\"プロパティがないと、JSONドキュメントは無効です:"
 
 #: ../../source/reference/object.rst:239
 msgid "Size"
-msgstr ""
+msgstr "サイズ"
 
 #: ../../source/reference/object.rst:241
 msgid ""

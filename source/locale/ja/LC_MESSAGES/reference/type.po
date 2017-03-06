@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Understanding JSON Schema 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:43+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-03-02 11:12+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,17 +21,17 @@ msgstr ""
 
 #: ../../source/reference/type.rst:8
 msgid "Type-specific keywords"
-msgstr ""
+msgstr "型指定キーワード"
 
 #: ../../source/reference/type.rst:10
 msgid ""
 "The ``type`` keyword is fundamental to JSON Schema.  It specifies the "
 "data type for a schema."
-msgstr ""
+msgstr "``type`` キーワードはJSONスキーマの基本です。これはスキーマのデータ型を指定します。"
 
 #: ../../source/reference/type.rst:13
 msgid "At its core, JSON Schema defines the following basic types:"
-msgstr ""
+msgstr "JSONスキーマのコアでは、次の基本的な型を定義しています"
 
 #: ../../source/reference/type.rst:29
 msgid "`string`"
@@ -61,36 +61,36 @@ msgstr ""
 msgid ""
 "These types have analogs in most programming languages, though they may "
 "go by different names."
-msgstr ""
+msgstr "これらの型はほとんどのプログラミング言語において、名前は違うことがあるものの類似した型があります。"
 
 #: ../../source/reference/type.rst:98
 msgid "The ``type`` keyword may either be a string or an array:"
-msgstr ""
+msgstr "``type`` キーワード文字列か配列を指定できます。"
 
 #: ../../source/reference/type.rst:100
 msgid "If it's a string, it is the name of one of the basic types above."
-msgstr ""
+msgstr "文字列の場合、それは前述の基本型のどれか一つの名前です。"
 
 #: ../../source/reference/type.rst:102
 msgid ""
 "If it is an array, it must be an array of strings, where each string is "
 "the name of one of the basic types, and each element is unique. In this "
 "case, the JSON snippet is valid if it matches *any* of the given types."
-msgstr ""
+msgstr "配列の場合は文字列の配列で、それぞれの文字列は基本型の一つの名前であり、それぞれユニークでなければなりません。この場合、JSONスニペットは与えられた型の *どれか* にマッチすれば有効です。"
 
 #: ../../source/reference/type.rst:107
 msgid "Here is a simple example of using the ``type`` keyword:"
-msgstr ""
+msgstr "これは ``type`` キーワードの使い方の簡単な例です:"
 
 #: ../../source/reference/type.rst:109
 msgid "This is not a number, it is a string containing a number."
-msgstr ""
+msgstr "これは数値ではなく数字を含む文字列です。"
 
 #: ../../source/reference/type.rst:119
 msgid ""
 "In the following example, we accept strings and numbers, but not "
 "structured data types:"
-msgstr ""
+msgstr "以下の例では文字列と数値を受け入れますが、構造化されたデータ型は受け入れません。"
 
 #: ../../source/reference/type.rst:131
 msgid ""
@@ -99,5 +99,5 @@ msgid ""
 "range, that would not be applicable to other types.  In this reference, "
 "these validation keywords are described along with each of their "
 "corresponding types in the following chapters."
-msgstr ""
+msgstr "これらの型のそれぞれで、その型でのみ適用されるキーワードがあります。たとえば数値型には数値の範囲を指定する方法があり、それは他の型には適用できません。このリファレンスでは以降の節で、これらの検証キーワードが対応する型と一緒に説明されています。"
 

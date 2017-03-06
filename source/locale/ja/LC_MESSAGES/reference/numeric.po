@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Understanding JSON Schema 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:43+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-03-06 16:27+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,35 +21,35 @@ msgstr ""
 
 #: ../../source/reference/numeric.rst:9
 msgid "Numeric types"
-msgstr ""
+msgstr "数値型"
 
 #: ../../source/reference/numeric.rst:11
 msgid ""
 "There are two numeric types in JSON Schema: `integer` and `number`.  They"
 " share the same validation keywords."
-msgstr ""
+msgstr "JSONスキーマには２つの数値型があります: `integer` と `number` 。これらは同じ検査キーワードを共有します。"
 
 #: ../../source/reference/numeric.rst:16
 msgid ""
 "JSON has no standard way to represent complex numbers, so there is no way"
 " to test for them in JSON Schema."
-msgstr ""
+msgstr "JSONは複素数を表現する標準的な方法がないので、JSONスキーマでそれらを検査する方法はありません。"
 
 #: ../../source/reference/numeric.rst:23
 msgid "integer"
-msgstr ""
+msgstr "整数"
 
 #: ../../source/reference/numeric.rst:25
 msgid "The ``integer`` type is used for integral numbers."
-msgstr ""
+msgstr "``integer`` 型は整数のために使います。"
 
 #: ../../source/reference/numeric.rst:33
 msgid "Floating point numbers are rejected:"
-msgstr ""
+msgstr "浮動小数点数は受け付けません:"
 
 #: ../../source/reference/numeric.rst:33 ../../source/reference/numeric.rst:94
 msgid "Numbers as strings are rejected:"
-msgstr ""
+msgstr "文字列としての数字は受け付けません:"
 
 #: ../../source/reference/numeric.rst:49
 msgid ""
@@ -64,60 +64,60 @@ msgid ""
 "point.  For example, a JavaScript-based may accept ``1.0`` as an integer,"
 " whereas the Python-based `jsonschema "
 "<https://pypi.python.org/pypi/jsonschema>`__ does not."
-msgstr ""
+msgstr "\"整数\"の正確な取り扱いは利用するJSONスキーマバリデータの実装に依存します。JavaScript（従ってJSONも）には整数と浮動小数点数の型の区別がありません。そのためJSONスキーマは型のみでは整数と非整数の区別ができません。JSONスキーマ仕様ではバリデータが数字が整数であるかどうかを判別するために、型だけではなく数学的な値を使うことを推奨していますが、必須ではありません。したがって、この点において各バリデータには食い違いがあります。たとえばJavaScriptベースのものでは ``1.0`` を整数として受け入れますが、Pythonベースのjsonschemaではそうではありません。"
 
 #: ../../source/reference/numeric.rst:62
 msgid ""
 "Clever use of the ``multipleOf`` keyword (see `multiples`) can be used to"
 " get around this discrepancy.  For example, the following likely has the "
 "same behavior on all JSON Schema implementations:"
-msgstr ""
+msgstr "``multipleOf`` キーワード（ `multiples` を参照）を上手に使うことでこの不一致を回避することができます。たとえば以下はすべてのJSONスキーマ実装で同じ動作をします:"
 
 #: ../../source/reference/numeric.rst:83
 msgid "number"
-msgstr ""
+msgstr "数値"
 
 #: ../../source/reference/numeric.rst:85
 msgid ""
 "The ``number`` type is used for any numeric type, either integers or "
 "floating point numbers."
-msgstr ""
+msgstr "``number`` 型は整数や浮動小数点数など、どんな数値型にも使います。"
 
 #: ../../source/reference/numeric.rst:94
 msgid "Simple floating point number:"
-msgstr ""
+msgstr "単純な浮動小数点数:"
 
 #: ../../source/reference/numeric.rst:94
 msgid "Exponential notation also works:"
-msgstr ""
+msgstr "指数表現も対応します:"
 
 #: ../../source/reference/numeric.rst:118
 msgid "Multiples"
-msgstr ""
+msgstr "倍数"
 
 #: ../../source/reference/numeric.rst:120
 msgid ""
 "Numbers can be restricted to a multiple of a given number, using the "
 "``multipleOf`` keyword.  It may be set to any positive number."
-msgstr ""
+msgstr "``multipleOf`` キーワードを使うと、数値を指定された数の倍数に制限できます。任意の正の数に設定できます。"
 
 #: ../../source/reference/numeric.rst:123
 msgid "Not a multiple of 10:"
-msgstr ""
+msgstr "10の倍数ではない:"
 
 #: ../../source/reference/numeric.rst:146
 msgid "Range"
-msgstr ""
+msgstr "範囲"
 
 #: ../../source/reference/numeric.rst:148
 msgid ""
 "Ranges of numbers are specified using a combination of the ``minimum``, "
 "``maximum``, ``exclusiveMinimum`` and ``exclusiveMaximum`` keywords."
-msgstr ""
+msgstr "``minimum``, ``maximum``, ``exclusiveMinimum``, ``exclusiveMaximum`` キーワードの組み合わせを使って、数値を範囲を指定します。"
 
 #: ../../source/reference/numeric.rst:152
 msgid "``minimum`` specifies a minimum numeric value."
-msgstr ""
+msgstr "``minimum`` は最小値を指定します。"
 
 #: ../../source/reference/numeric.rst:154
 msgid ""
@@ -125,11 +125,11 @@ msgid ""
 "range excludes the minimum value, i.e., :math:`x > \\mathrm{min}`.  When "
 "``false`` (or not included), it indicates that the range includes the "
 "minimum value, i.e., :math:`x \\ge \\mathrm{min}`."
-msgstr ""
+msgstr "``exclusiveMinimum`` はブール値です。 ``true`` の場合、最小値は範囲に含まない、すなわち :math:`x > \\mathrm{min}` を表します。 ``false`` （または指定を含まない）の場合、最小値を範囲に含む、すなわち :math:`x \\ge \\mathrm{min}` を表します。"
 
 #: ../../source/reference/numeric.rst:160
 msgid "``maximum`` specifies a maximum numeric value."
-msgstr ""
+msgstr "``maximum`` は最大値を指定します。"
 
 #: ../../source/reference/numeric.rst:162
 msgid ""
@@ -137,21 +137,21 @@ msgid ""
 "range excludes the maximum value, i.e., :math:`x < \\mathrm{max}`.  When "
 "``false`` (or not included), it indicates that the range includes the "
 "maximum value, i.e., :math:`x \\le \\mathrm{max}`."
-msgstr ""
+msgstr "``exclusiveMaximum`` はブール値です。 ``true`` の場合、最大値は範囲に含まない、すなわち :math:`x < \\mathrm{max}` を表します。  ``false`` （または指定を含まない）の場合、最大値は範囲に含む、すなわち :math:`x \\le \\mathrm{max}` を表します。"
 
 #: ../../source/reference/numeric.rst:168
 msgid "Less than minimum:"
-msgstr ""
+msgstr "``minimum`` より小さい:"
 
 #: ../../source/reference/numeric.rst:168
 msgid "exclusiveMinimum was not specified, so 0 is included:"
-msgstr ""
+msgstr "``exclusiveMinimum`` が指定されていないので、0は含まれます:"
 
 #: ../../source/reference/numeric.rst:168
 msgid "exclusiveMaximum is true, so 100 is not included:"
-msgstr ""
+msgstr "``exclusiveMaximum`` が ``true`` なので、100は含まれません:"
 
 #: ../../source/reference/numeric.rst:168
 msgid "Greater than maximum:"
-msgstr ""
+msgstr "``maximum`` より大きい:"
 
