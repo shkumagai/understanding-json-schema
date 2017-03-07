@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Understanding JSON Schema 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:43+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-03-07 17:03+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,17 +21,17 @@ msgstr ""
 
 #: ../../source/reference/array.rst:7
 msgid "array"
-msgstr ""
+msgstr "配列"
 
 #: ../../source/reference/array.rst:9
 msgid ""
 "Arrays are used for ordered elements.  In JSON, each element in an array "
 "may be of a different type."
-msgstr ""
+msgstr "配列は順序のある要素に使います。JSONでは配列の中の各要素は異なる型の場合があります。"
 
 #: ../../source/reference/array.rst:37
 msgid "Items"
-msgstr ""
+msgstr "項目"
 
 #: ../../source/reference/array.rst:39
 msgid ""
@@ -39,17 +39,17 @@ msgid ""
 "it's often useful to validate the items of the array against some schema "
 "as well.  This is done using the ``items`` and ``additionalItems`` "
 "keywords."
-msgstr ""
+msgstr "デフォルトでは、配列の要素は何でも構いません。ただし、配列の各要素を何らかのスキーマに対して検査すると便利なことがよくあります。これは ``items`` と ``additionalItems`` キーワードを使って行われます。"
 
 #: ../../source/reference/array.rst:44
 msgid "There are two ways in which arrays are generally used in JSON:"
-msgstr ""
+msgstr "JSONで一般的に使われる配列には２種類あります:"
 
 #: ../../source/reference/array.rst:46
 msgid ""
 "**List validation:** a sequence of arbitrary length where each item "
 "matches the same schema."
-msgstr ""
+msgstr "**リストバリデーション**: 各項目が同じスキーマに一致する、任意の長さのシーケンス。"
 
 #: ../../source/reference/array.rst:49
 msgid ""
@@ -58,11 +58,11 @@ msgid ""
 " is meaningful as to how the value is interpreted.  (This usage is often "
 "given a whole separate type in some programming languages, such as "
 "Python's ``tuple``)."
-msgstr ""
+msgstr "**タプルバリデーション**: 各項目で異なるスキーマを持つ固定長のシーケンス。この使い方の場合、各項目のインデックス（または場所）は値の解釈方法と同様の意味を持ちます。（この使用法はPythonでいうタプルのように、いくつかのプログラミング言語ではしばしば全く異なる型が与えられます。）"
 
 #: ../../source/reference/array.rst:61
 msgid "List validation"
-msgstr ""
+msgstr "リストバリデーション"
 
 #: ../../source/reference/array.rst:63
 msgid ""
@@ -70,74 +70,74 @@ msgid ""
 "matches the same schema.  For this kind of array, set the ``items`` "
 "keyword to a single schema that will be used to validate all of the items"
 " in the array."
-msgstr ""
+msgstr "リストバリデーションは各項目が同じスキーマにマッチする任意の長さの配列に便利です。この種の配列に対して、 ``items`` キーワードに配列の中のすべての項目の検証に使う単一のスキーマを設定します。"
 
 #: ../../source/reference/array.rst:69
 msgid ""
 "When ``items`` is a single schema, the ``additionalItems`` keyword is "
 "meaningless, and it should not be used."
-msgstr ""
+msgstr "``items`` が単一のスキーマの場合、 ``additionalItems`` キーワードは無意味なので使うべきではありません。"
 
 #: ../../source/reference/array.rst:72
 msgid ""
 "In the following example, we define that each item in an array is a "
 "number:"
-msgstr ""
+msgstr "次の例では、配列の各項目が数値の配列を定義します:"
 
 #: ../../source/reference/array.rst:75
 msgid "A single \"non-number\" causes the whole array to be invalid:"
-msgstr ""
+msgstr "１つの\"数値でない項目\"を指定すると、配列全体が無効になります:"
 
 #: ../../source/reference/array.rst:75
 msgid "The empty array is always valid:"
-msgstr ""
+msgstr "空の配列は常に有効です:"
 
 #: ../../source/reference/array.rst:98
 msgid "Tuple validation"
-msgstr ""
+msgstr "タプルバリデーション"
 
 #: ../../source/reference/array.rst:100
 msgid ""
 "Tuple validation is useful when the array is a collection of items where "
 "each has a different schema and the ordinal index of each item is "
 "meaningful."
-msgstr ""
+msgstr "タプルバリデーションはそれぞれ異なるスキーマを項目の集合で各項目順序を示すインデックスが意味のあるものの場合に便利です。"
 
 #: ../../source/reference/array.rst:104
 msgid "For example, you may represent a street address such as::"
-msgstr ""
+msgstr "たとえば次のような住所を表すことができます:"
 
 #: ../../source/reference/array.rst:108
 msgid "as a 4-tuple of the form:"
-msgstr ""
+msgstr "次の形式の4タプルと同じです:"
 
 #: ../../source/reference/array.rst:110
 msgid "[number, street_name, street_type, direction]"
-msgstr ""
+msgstr "[number, street_name, street_type, direction]"
 
 #: ../../source/reference/array.rst:112
 msgid "Each of these fields will have a different schema:"
-msgstr ""
+msgstr "これらの各フィールドは異なるスキーマを持ちます:"
 
 #: ../../source/reference/array.rst:114
 msgid "``number``: The address number.  Must be a number."
-msgstr ""
+msgstr "``number``: 番地。数値でなければなりません。"
 
 #: ../../source/reference/array.rst:116
 msgid "``street_name``: The name of the street.  Must be a string."
-msgstr ""
+msgstr "``street_name``: 通りの名前。文字列でなければなりません。"
 
 #: ../../source/reference/array.rst:118
 msgid ""
 "``street_type``: The type of street.  Should be a string from a fixed set"
 " of values."
-msgstr ""
+msgstr "``street_type``: 通りの種類。固定値のセットからの文字列でなければなりません。"
 
 #: ../../source/reference/array.rst:121
 msgid ""
 "``direction``: The city quadrant of the address.  Should be a string from"
 " a different set of values."
-msgstr ""
+msgstr "``direction``: 住所の都市区画。固定値のセットからの文字列でなければなりません。"
 
 #: ../../source/reference/array.rst:124
 msgid ""
@@ -146,27 +146,27 @@ msgid ""
 " an array where the first element validates the first element of the "
 "input array, the second element validates the second element of the input"
 " array, etc."
-msgstr ""
+msgstr "これを行なうために ``items`` キーワードを配列に設定します。各項目はドキュメントの配列の各インデックスに対応するスキーマです。つまり最初の要素が入力配列の最初の要素を検証し、２つ目の要素が入力配列の２番目の要素を検証し... という配列です。"
 
 #: ../../source/reference/array.rst:130
 msgid "Here's the example schema:"
-msgstr ""
+msgstr "これがスキーマの例です:"
 
 #: ../../source/reference/array.rst:132
 msgid "\"Drive\" is not one of the acceptable street types:"
-msgstr ""
+msgstr "\"Drive\" は受け入れ可能な通りの種類ではありません:"
 
 #: ../../source/reference/array.rst:132
 msgid "This address is missing a street number"
-msgstr ""
+msgstr "この住所には通りの名前がありません"
 
 #: ../../source/reference/array.rst:132
 msgid "It's okay to not provide all of the items:"
-msgstr ""
+msgstr "すべての項目を提供していないのは大丈夫です:"
 
 #: ../../source/reference/array.rst:132
 msgid "And, by default, it's also okay to add additional items to end:"
-msgstr ""
+msgstr "そしてデフォルトでは、末尾に追加の要素を足すのも大丈夫です:"
 
 #: ../../source/reference/array.rst:168
 msgid ""
@@ -174,19 +174,19 @@ msgid ""
 "additional items in the array beyond what is defined in the schema. Here,"
 " we'll reuse the example schema above, but set ``additionalItems`` to "
 "``false``, which has the effect of disallowing extra items in the array."
-msgstr ""
+msgstr "``additionalItems`` キーワードは、スキーマで定義されているもの以外で配列の中に追加の項目を含めることが有効か否かを制御します。ここでは上の例のスキーマを再利用しますが ``additionalItems`` を ``false`` にするため、配列の中に余分な項目を許可しないという効果があります。"
 
 #: ../../source/reference/array.rst:174
 msgid "It's ok to not provide all of the items:"
-msgstr ""
+msgstr "すべての項目を提供していないのは大丈夫です:"
 
 #: ../../source/reference/array.rst:174
 msgid "But, since additionalItems is false, we can't provide extra items:"
-msgstr ""
+msgstr "しかし ``additionalItems`` が ``false`` なので、余分な項目を与えられません:"
 
 #: ../../source/reference/array.rst:213
 msgid "Length"
-msgstr ""
+msgstr "長さ"
 
 #: ../../source/reference/array.rst:215
 msgid ""
@@ -194,19 +194,19 @@ msgid ""
 "``maxItems`` keywords.  The value of each keyword must be a non-negative "
 "number.  These keywords work whether doing `list-validation` or `tuple-"
 "validation`."
-msgstr ""
+msgstr "配列の長さは ``minItems`` と ``maxItems`` キーワードを使って指定できます。どちらのキーワードも正の数値でなければなりません。これらのキーワードは `list-validation` や `tuple-validation` を行っていても動作します。"
 
 #: ../../source/reference/array.rst:243
 msgid "Uniqueness"
-msgstr ""
+msgstr "一意性"
 
 #: ../../source/reference/array.rst:245
 msgid ""
 "A schema can ensure that each of the items in an array is unique. Simply "
 "set the ``uniqueItems`` keyword to ``true``."
-msgstr ""
+msgstr "スキーマは配列の中の各項目が一意であることを保証できます。単純に ``uniqueItems`` キーワードを ``true`` に設定します。"
 
 #: ../../source/reference/array.rst:248
 msgid "The empty array always passes:"
-msgstr ""
+msgstr "空の配列は常に有効です:"
 

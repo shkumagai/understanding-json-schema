@@ -84,7 +84,7 @@ msgid ""
 "kinds of string values that are commonly used.  This allows values to be "
 "constrained beyond what the other tools in JSON Schema, including "
 "`regular-expressions` can do."
-msgstr "``format`` キーワードは一般的に使われているある種の文字列値について、基本の意味的な検証を可能にします。これによって値に対して、正規表現を含めたJSONスキーマにおける他のツールができること以上の制約が可能になります。"
+msgstr "``format`` キーワードは一般的に使われているある種の文字列値について、基本の意味的な検証を可能にします。これによって値に対して、 `regular-expressions` を含めたJSONスキーマにおける他のツールができること以上の制約が可能になります。"
 
 #: ../../source/reference/string.rst:121
 msgid ""

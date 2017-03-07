@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Understanding JSON Schema 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:43+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-03-07 18:08+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/reference/combining.rst:7
 msgid "Combining schemas"
-msgstr ""
+msgstr "スキーマの組み合わせ"
 
 #: ../../source/reference/combining.rst:9
 msgid ""
@@ -31,7 +31,7 @@ msgid ""
 "described in `structuring`.  Combining schemas may be as simple as "
 "allowing a value to be validated against multiple criteria at the same "
 "time."
-msgstr ""
+msgstr "JSONスキーマにはスキーマを結合するためのいくつかのキーワードが含まれています。これは複数のファイルやJSONツリーからスキーマを組み合わせる必要を意図するものではありませんが、これらの機能はそれを可能にするもので、 `structuring` の中で説明しています。スキーマの組み合わせは、値を複数の基準に対して同時に検証できるようにするのと同様で簡単です。"
 
 #: ../../source/reference/combining.rst:16
 msgid ""

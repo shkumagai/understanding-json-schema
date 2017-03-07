@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Understanding JSON Schema 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:43+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-03-07 17:54+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,24 +21,24 @@ msgstr ""
 
 #: ../../source/reference/generic.rst:2
 msgid "Generic keywords"
-msgstr ""
+msgstr "汎用キーワード"
 
 #: ../../source/reference/generic.rst:4
 msgid ""
 "This chapter lists some miscellaneous properties that are available for "
 "all JSON types."
-msgstr ""
+msgstr "この章では、すべてのJSON型で使えるその他のプロパティをいくつか示します。"
 
 #: ../../source/reference/generic.rst:15
 msgid "Metadata"
-msgstr ""
+msgstr "メタデータ"
 
 #: ../../source/reference/generic.rst:17
 msgid ""
 "JSON Schema includes a few keywords, ``title``, ``description`` and "
 "``default``, that aren't strictly used for validation, but are used to "
 "describe parts of a schema."
-msgstr ""
+msgstr "JSONスキーマには検証に厳密には使われないもののスキーマの一部を記述するために使われる、``title``, ``description`` と ``default`` というキーワードが含まれています。"
 
 #: ../../source/reference/generic.rst:21
 msgid ""
@@ -46,7 +46,7 @@ msgid ""
 "will preferably be short, whereas a \"description\" will provide a more "
 "lengthy explanation about the purpose of the data described by the "
 "schema.  Neither are required, but they are encouraged for good practice."
-msgstr ""
+msgstr "``title`` と``description`` キーワードは文字列でなければなりません。\"title\" は短いことが好ましい一方、\"description\"はスキーマによって記述されるデータの目的についてより長い説明を提供します。どちらも必須ではありませんが、良い慣習として奨励されています。"
 
 #: ../../source/reference/generic.rst:27
 msgid ""
@@ -55,39 +55,39 @@ msgid ""
 "a missing key/value pair, though many JSON schema validators simply "
 "ignore the ``default`` keyword.  It should validate against the schema in"
 " which it resides, but that isn't required."
-msgstr ""
+msgstr "``default`` キーワードは項目のデフォルト値を指定します。JSON処理ツールはこの情報を利用して欠けたキー/値ペアのデフォルト値を提供できますが、多くのJSONスキーマバリデータは単純に ``default`` キーワードを無視します。 ``default`` キーワードが存在するスキーマに対する検証はすべきですが、必須ではありません。"
 
 #: ../../source/reference/generic.rst:47
 msgid "Enumerated values"
-msgstr ""
+msgstr "列挙値"
 
 #: ../../source/reference/generic.rst:49
 msgid ""
 "The ``enum`` keyword is used to restrict a value to a fixed set of "
 "values.  It must be an array with at least one element, where each "
 "element is unique."
-msgstr ""
+msgstr "``enum`` キーワードは値を決まった値のセットに制限するために使われます。少なくとも一つの要素を持つ配列で、各要素がユニークでなければなりません。"
 
 #: ../../source/reference/generic.rst:53
 msgid "The following is an example for validating street light colors:"
-msgstr ""
+msgstr "街灯の色を検証する例を次に示します:"
 
 #: ../../source/reference/generic.rst:65
 msgid ""
 "You can use ``enum`` even without a type, to accept values of different "
 "types.  Let's extend the example to use ``null`` to indicate \"off\", and"
 " also add 42, just for fun."
-msgstr ""
+msgstr "``enum`` は異なる型の値を受け入れるために、型を指定しないでも使えます。お遊びで、 ``null`` を使って\"off\"を表す例を拡張し、42も加えてみましょう。"
 
 #: ../../source/reference/generic.rst:82
 msgid ""
 "However, in most cases, the elements in the ``enum`` array should also be"
 " valid against the enclosing schema:"
-msgstr ""
+msgstr "ただしほとんどの場合、 ``enum`` 配列の中の要素も囲まれているスキーマに対して有効であるべきです:"
 
 #: ../../source/reference/generic.rst:85
 msgid ""
 "This is in the enum, but it's invalid against { \"type\": \"string\" }, "
 "so it's ultimately invalid:"
-msgstr ""
+msgstr "これは ``enum`` ですが、 ``{ \"type\": \"string\" }`` に対して無効なので、最終的には無効です:"
 

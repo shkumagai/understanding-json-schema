@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Understanding JSON Schema 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:43+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-03-07 17:10+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,18 +21,18 @@ msgstr ""
 
 #: ../../source/reference/boolean.rst:7
 msgid "boolean"
-msgstr ""
+msgstr "ブール"
 
 #: ../../source/reference/boolean.rst:9
 msgid ""
 "The boolean type matches only two special values: ``true`` and ``false``."
 "  Note that values that *evaluate* to ``true`` or ``false``, such as 1 "
 "and 0, are not accepted by the schema."
-msgstr ""
+msgstr "ブール型は ``true`` と ``false`` の２つの特殊な値にのみマッチします。1や0など、 ``true`` や ``false`` と *評価される* 値はスキーマによって許可されないことに注意してください。"
 
 #: ../../source/reference/boolean.rst:22
 msgid ""
 "Values that evaluate to true or false are still not accepted by the "
 "schema:"
-msgstr ""
+msgstr "``true`` や ``false`` と評価される値は、まだスキーマによって許可されません:"
 
