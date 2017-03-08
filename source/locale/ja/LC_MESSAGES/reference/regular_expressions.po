@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Understanding JSON Schema 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:43+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-03-08 12:15+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/reference/regular_expressions.rst:7
 msgid "Regular Expressions"
-msgstr ""
+msgstr "正規表現"
 
 #: ../../source/reference/regular_expressions.rst:9
 msgid ""
@@ -31,104 +31,104 @@ msgid ""
 "international.org/publications/standards/Ecma-262.htm>`__, specifically)."
 " However, that complete syntax is not widely supported, therefore it is "
 "recommended that you stick to the subset of that syntax described below."
-msgstr ""
+msgstr ":ref:`pattern <pattern>` と `patternProperties` キーワードは正規表現を使って制約を表します。使用される正規表現の構文はJavaScript（特に `ECMA 262 <http://www.ecma-international.org/publications/standards/Ecma-262.htm>`__ ）からのものです。ただし完全な構文を広くサポートはしていないため、後述する構文のサブセットに従うことをお勧めします。"
 
 #: ../../source/reference/regular_expressions.rst:17
 msgid ""
 "A single unicode character (other than the special characters below) "
 "matches itself."
-msgstr ""
+msgstr "単一のユニコード文字（以下の特殊文字以外）はそれ自身と一致します。"
 
 #: ../../source/reference/regular_expressions.rst:20
 msgid "``^``: Matches only at the beginning of the string."
-msgstr ""
+msgstr "``^``: 文字列の先頭にのみ一致します。"
 
 #: ../../source/reference/regular_expressions.rst:22
 msgid "``$``: Matches only at the end of the string."
-msgstr ""
+msgstr "``$``: 文字列の末尾にのみ一致します。"
 
 #: ../../source/reference/regular_expressions.rst:24
 msgid ""
 "``(...)``: Group a series of regular expressions into a single regular "
 "expression."
-msgstr ""
+msgstr "``(...)``: 一連の正規表現を一つの正規表現にグループ化します。"
 
 #: ../../source/reference/regular_expressions.rst:27
 msgid ""
 "``|``: Matches either the regular expression preceding or following the "
 "``|`` symbol."
-msgstr ""
+msgstr "``|``: ``|`` シンボルの前後にある正規表現のいずれかに一致します。"
 
 #: ../../source/reference/regular_expressions.rst:30
 msgid "``[abc]``: Matches any of the characters inside the square brackets."
-msgstr ""
+msgstr "``[abc]``: 角括弧（スクウェアブラケット）の中の任意の文字と一致します。"
 
 #: ../../source/reference/regular_expressions.rst:32
 msgid "``[a-z]``: Matches the range of characters."
-msgstr ""
+msgstr "``[a-z]``: 文字の範囲に一致します。"
 
 #: ../../source/reference/regular_expressions.rst:34
 msgid "``[^abc]``: Matches any character *not* listed."
-msgstr ""
+msgstr "``[^abc]``: リストされて *いない* 文字と一致します。"
 
 #: ../../source/reference/regular_expressions.rst:36
 msgid "``[^a-z]``: Matches any character outside of the range."
-msgstr ""
+msgstr "``[^a-z]``: 範囲の外の任意の文字と一致します。"
 
 #: ../../source/reference/regular_expressions.rst:38
 msgid ""
 "``+``: Matches one or more repetitions of the preceding regular "
 "expression."
-msgstr ""
+msgstr "``+``: 直前の正規表現の1回以上の繰り返しに一致します。"
 
 #: ../../source/reference/regular_expressions.rst:41
 msgid ""
 "``*``: Matches zero or more repetitions of the preceding regular "
 "expression."
-msgstr ""
+msgstr "``*``: 直前の正規表現の0回以上の繰り返しに一致します。"
 
 #: ../../source/reference/regular_expressions.rst:44
 msgid ""
 "``?``: Matches zero or one repetitions of the preceding regular "
 "expression."
-msgstr ""
+msgstr "``?``: 直前の正規表現の0回または1回の繰り返しに一致します。"
 
 #: ../../source/reference/regular_expressions.rst:47
 msgid ""
 "``+?``, ``*?``, ``??``: The ``*``, ``+``, and ``?`` qualifiers are all "
 "greedy; they match as much text as possible. Sometimes this behavior "
 "isn't desired and you want to match as few characters as possible."
-msgstr ""
+msgstr "``+?``, ``*?``, ``??``: ``*``, ``+`` と ``?`` の量指定子は貪欲（greedy）です。これらは可能な限り多くの文字と一致します。場合によってこの振る舞いが望ましくなくて、可能な限り少ない文字に一致させたい場合があります。"
 
 #: ../../source/reference/regular_expressions.rst:52
 msgid ""
 "``{x}``: Match exactly ``x`` occurrences of the preceding regular "
 "expression."
-msgstr ""
+msgstr "``{x}``: 直前の正規表現の厳密に ``x`` 個の出現に一致します。"
 
 #: ../../source/reference/regular_expressions.rst:55
 msgid ""
 "``{x,y}``: Match at least ``x`` and at most ``y`` occurrences of the "
 "preceding regular expression."
-msgstr ""
+msgstr "``{x,y}``: 直前の正規表現の、``x`` 回以上 ``y`` 回の出現に一致します。"
 
 #: ../../source/reference/regular_expressions.rst:58
 msgid ""
 "``{x,}``: Match ``x`` occurrences or more of the preceding regular "
 "expression."
-msgstr ""
+msgstr "``{x,}``: 直前の正規表現の ``x`` 回以上の繰り返しに一致します。"
 
 #: ../../source/reference/regular_expressions.rst:61
 msgid "``{x}?``, ``{x,y}?``, ``{x,}?``: Lazy versions of the above expressions."
-msgstr ""
+msgstr "``{x}?``, ``{x,y}?``, ``{x,}?``: 上記の式の最短一致バージョン"
 
 #: ../../source/reference/regular_expressions.rst:72
 msgid "Example"
-msgstr ""
+msgstr "例"
 
 #: ../../source/reference/regular_expressions.rst:74
 msgid ""
 "The following example matches a simple North American telephone number "
 "with an optional area code:"
-msgstr ""
+msgstr "次の例は、単純な北米の任意の地域番号付き電話番号に一致します:"
 

@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Understanding JSON Schema 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:43+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-03-08 14:30+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/structuring.rst:7
 msgid "Structuring a complex schema"
-msgstr ""
+msgstr "複雑なスキーマの構造化"
 
 #: ../../source/structuring.rst:9
 msgid ""
@@ -33,11 +33,11 @@ msgid ""
 " reused in a number of places.  This chapter will present some practical "
 "examples that use the tools available for reusing and structuring "
 "schemas."
-msgstr ""
+msgstr "手頃な複雑さのコンピュータプログラムを書く場合なら、コード片が使用されるあらゆる場所にコピーアンドペーストで複製するよりも、プログラムを再利用可能な機能に構造かする方が優れている、と一般的に認められています。JSONスキーマでも同様で、最も単純なスキーマ以外はスキーマをいくつかの場所で再利用可能なパーツに構造化すると本当に便利です。この章ではスキーマの再利用と構造化に利用できるツールを使った実用的な例を紹介します。"
 
 #: ../../source/structuring.rst:19
 msgid "Reuse"
-msgstr ""
+msgstr "再利用"
 
 #: ../../source/structuring.rst:21
 msgid ""
@@ -50,22 +50,22 @@ msgid ""
 " were to start international business in the future and we wanted to add "
 "a country field to all the addresses, it would be better to do this in a "
 "single place rather than everywhere that addresses are used."
-msgstr ""
+msgstr "この例では顧客レコードを定義し、それぞれの顧客は配送先住所と請求先住所の両方を持てるようにしたいとします。住所は常に同じ---通りの住所、都市、州を持っています---なので、住所を保存したいすべての場所にスキーマのそのパーツをコピーしたくはありません。スキーマをより冗長にするだけでなく、将来的にはスキーマを更新するのがさらに困難になります。我々の想像上の企業が将来的に国際ビジネスを始め、すべての住所に国のフィールドを追加したい場合、住所が使われているあらゆる場所でそれを行なうよりも、ただ1カ所で行なう方がより良いでしょう。"
 
 #: ../../source/structuring.rst:33
 msgid "This is part of the draft 4 spec only, and does not exist in draft 3."
-msgstr ""
+msgstr "これはドラフト4だけの仕様の一部であり、ドラフト3には存在しません。"
 
 #: ../../source/structuring.rst:35
 msgid "So let's start with the schema that defines an address::"
-msgstr ""
+msgstr "さぁ、アドレスを定義するスキーマから始めましょう::"
 
 #: ../../source/structuring.rst:47
 msgid ""
 "Since we are going to reuse this schema, it is customary (but not "
 "required) to put it in the parent schema under a key called "
 "``definitions``::"
-msgstr ""
+msgstr "このスキーマを再利用しようとしているので、習慣として（必須ではありません）親スキーマの ``definitions`` と呼ばれるキーの下に置きます。"
 
 #: ../../source/structuring.rst:68
 msgid ""
@@ -73,20 +73,20 @@ msgid ""
 "``$ref`` keyword.  The easiest way to describe ``$ref`` is that it gets "
 "logically replaced with the thing that it points to.  So, to refer to the"
 " above, we would include::"
-msgstr ""
+msgstr "``$ref`` キーワードを使うことで、他の場所からこのスキーマスニペットを参照できます。 ``$ref`` の最も簡単な記述方法は、それが指すもので論理的に置き換えられることです。したがって、上記を参照するには次のようにします::"
 
 #: ../../source/structuring.rst:75
 msgid ""
 "The value of ``$ref`` is a string in a format called `JSON Pointer "
 "<https://tools.ietf.org/html/rfc6901>`__."
-msgstr ""
+msgstr "``$ref`` の値は `JSON ポインタ <https://tools.ietf.org/html/rfc6901>`__ と呼ばれる書式の文字列です。"
 
 #: ../../source/structuring.rst:79
 msgid ""
 "JSON Pointer aims to serve the same purpose as `XPath "
 "<http://www.w3.org/TR/xpath/>`_ from the XML world, but it is much "
 "simpler."
-msgstr ""
+msgstr "JSONポインタはXMLにおける `XPath <http://www.w3.org/TR/xpath/>`_ と同じ目的を提供することを目指していますが、はるかに簡単です。"
 
 #: ../../source/structuring.rst:83
 msgid ""
@@ -94,92 +94,92 @@ msgid ""
 "slash (``/``) separated keys thereafter just traverse the keys in the "
 "objects in the document.  Therefore, in our example "
 "``\"#/definitions/address\"`` means:"
-msgstr ""
+msgstr "ポンド記号（ ``#`` ）は現在のドキュメントを表し、その後はスラッシュ（ ``/`` ）で区切られたキーで、ドキュメント内のオブジェクトのキーを辿るだけです。したがって、この例では ``\"#/definitions/address\"`` は次を意味します:"
 
 #: ../../source/structuring.rst:88
 msgid "go to the root of the document"
-msgstr ""
+msgstr "ドキュメントのルートに行きます"
 
 #: ../../source/structuring.rst:89
 msgid "find the value of the key ``\"definitions\"``"
-msgstr ""
+msgstr "キー ``\"definitions\"`` の値を探します"
 
 #: ../../source/structuring.rst:90
 msgid "within that object, find the value of the key ``\"address\"``"
-msgstr ""
+msgstr "そのオブジェクトで、キー ``\"address\"`` の値を探します"
 
 #: ../../source/structuring.rst:92
 msgid ""
 "``$ref`` can also be a relative or absolute URI, so if you prefer to "
 "include your definitions in separate files, you can also do that.  For "
 "example::"
-msgstr ""
+msgstr "``$ref`` は相対及び絶対URLにもできるので、定義を別のファイルに含めることを望むならばそれも可能です。たとえば:"
 
 #: ../../source/structuring.rst:98
 msgid ""
 "would load the address schema from another file residing alongside this "
 "one."
-msgstr ""
+msgstr "は隣に並んでいる別のファイルからアドレススキーマを読込みます。"
 
 #: ../../source/structuring.rst:101
 msgid ""
 "Now let's put this together and use our address schema to create a schema"
 " for a customer:"
-msgstr ""
+msgstr "これらをまとめてアドレススキーマを使って顧客スキーマを作成しましょう:"
 
 #: ../../source/structuring.rst:145
 msgid "The id property"
-msgstr ""
+msgstr "idプロパティ"
 
 #: ../../source/structuring.rst:147
 msgid "The ``id`` property serves two purposes:"
-msgstr ""
+msgstr "``id`` プロパティは２つの目的を果たします:"
 
 #: ../../source/structuring.rst:149
 msgid "It declares a unique identifier for the schema."
-msgstr ""
+msgstr "スキーマに一意の識別子を宣言します。"
 
 #: ../../source/structuring.rst:151
 msgid "It declares a base URL against which ``$ref`` URLs are resolved."
-msgstr ""
+msgstr "解決された ``$ref`` のURLに対するベースのURLを宣言します。"
 
 #: ../../source/structuring.rst:153
 msgid ""
 "It is best practice that ``id`` is a URL, preferably in a domain that you"
 " control.  For example, if you own the ``foo.bar`` domain, and you had a "
 "schema for addresses, you may set its ``id`` as follows::"
-msgstr ""
+msgstr "``id`` はURLであるのが良い用法で、自分が管理するドメイン内のURLであることが望ましいです。たとえば ``foo.bar`` ドメインを所有していたとして、アドレスのスキーマがあるならその ``id`` を次のように設定できます::"
 
 #: ../../source/structuring.rst:159
 msgid ""
 "This provides a unique identifier for the schema, as well as, in most "
 "cases, indicating where it may be downloaded."
-msgstr ""
+msgstr "これによってスキーマに一意な識別子を提供するだけでなく、ほとんどの場合においてスキーマがダウンロードできる場所を示すことができます。"
 
 #: ../../source/structuring.rst:162
 msgid ""
 "But be aware of the second purpose of the ``id`` property: that it "
 "declares a base URL for relative ``$ref`` URLs elsewhere in the file. For"
 " example, if you had::"
-msgstr ""
+msgstr "しかし ``id`` プロパティの２つ目の目的に注意してください。ファイル内のどこかにある ``$ref`` URLのためのベースURLを宣言することです。たとえば次の:"
 
 #: ../../source/structuring.rst:168
 msgid ""
 "in the same file, a JSON schema validation library would fetch "
 "``person.json`` from ``http://foo.bar/schemas/person.json``, even if "
 "``address.json`` was loaded from the local filesystem."
-msgstr ""
+msgstr "が同じファイルにある場合、JSONスキーマバリデーションライブラリはローカルファイルシステムから ``address.json`` がロードされたとしても、 ``http://foo.bar/schemas/person.json`` から ``person.json`` をフェッチします。"
 
 #: ../../source/structuring.rst:173
 msgid "Extending"
-msgstr ""
+msgstr "拡張"
 
 #: ../../source/structuring.rst:175
 msgid ""
 "The power of ``$ref`` really shines when it is combined with the "
 "combining keywords ``allOf``, ``anyOf`` and ``oneOf`` (see "
 ":ref:`combining`)."
-msgstr ""
+msgstr "``$ref`` の力は ``allOf``, ``anyOf`` そして ``oneOf`` の組み合わせキーワード（ :ref:`combining` ）と組み合わせることで真に輝きます。"
 
 #: ../../source/structuring.rst:179
 msgid ""
@@ -187,29 +187,29 @@ msgid ""
 "is a residential or business address, because the shipping method used "
 "may depend on that.  For the billing address, we don't want to store that"
 " information, because it's not applicable."
-msgstr ""
+msgstr "配送先住所については使用する配送方法がその住所に依存する可能性があるため、住所が住居住所なのか職場住所なのかを知りたいとします。請求先住所については適用できないのでその情報を保存したくありません。"
 
 #: ../../source/structuring.rst:184
 msgid "To handle this, we'll update our definition of shipping address::"
-msgstr ""
+msgstr "これを扱うため、配送先住所の定義を更新して:"
 
 #: ../../source/structuring.rst:188
 msgid ""
 "to instead use an ``allOf`` keyword entry combining both the core address"
 " schema definition and an extra schema snippet for the address type::"
-msgstr ""
+msgstr "の代わりにアドレスの核となるスキーマ定義とアドレスタイプの拡張スキーマスニペットの両方を組み合わせた ``allOf`` エントリを使います。"
 
 #: ../../source/structuring.rst:207
 msgid "Tying this all together,"
-msgstr ""
+msgstr "これをすべてまとめると、"
 
 #: ../../source/structuring.rst:209
 msgid "This fails, because it's missing an address type:"
-msgstr ""
+msgstr "これは住所タイプが無いので、無効です:"
 
 #: ../../source/structuring.rst:260
 msgid ""
 "From these basic pieces, it's possible to build very powerful "
 "constructions without a lot of duplication."
-msgstr ""
+msgstr "これらの基本的な部分から、重複の無い非常に強力な構造を構築できます。"
 

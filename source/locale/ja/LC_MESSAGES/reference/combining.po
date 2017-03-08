@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Understanding JSON Schema 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:43+0900\n"
-"PO-Revision-Date: 2017-03-07 18:08+0900\n"
+"PO-Revision-Date: 2017-03-08 11:18+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -41,47 +41,47 @@ msgid ""
 " The second subschema requires a number with a minimum value of 0.  As "
 "long as a value validates against *either* of these schemas, it is "
 "considered valid against the entire combined schema."
-msgstr ""
+msgstr "たとえば次のスキーマの中の ``anyOf`` キーワードは、与えられた値が指定された複数のサブスキーマのいずれかに対して有効であることを示すために使われます。最初のサブスキーマは最大長が5の文字列が必須です。２番目のサブスキーマは最小値が0の数値が必須です。値がこれらのスキーマのいずれかに対して有効であると確認される限り、スキーマ結合されたスキーマ全体に対して有効であると見なされます。"
 
 #: ../../source/reference/combining.rst:39
 msgid "The keywords used to combine schemas are:"
-msgstr ""
+msgstr "スキーマの組み合わせで使われるキーワードは:"
 
 #: ../../source/reference/combining.rst:41
 msgid "`allOf`: Must be valid against *all* of the subschemas"
-msgstr ""
+msgstr "`allOf`: サブスキーマの *すべて* に対して有効でなければなりません"
 
 #: ../../source/reference/combining.rst:42
 msgid "`anyOf`: Must be valid against *any* of the subschemas"
-msgstr ""
+msgstr "`anyOf`: サブスキーマの *なにか* に対して有効でなければなりません"
 
 #: ../../source/reference/combining.rst:43
 msgid "`oneOf`: Must be valid against *exactly one* of the subschemas"
-msgstr ""
+msgstr "`oneOf`: サブスキーマの内の *どれか一つだけ* に対して有効でなければなりません"
 
 #: ../../source/reference/combining.rst:45
 msgid ""
 "All of these keywords must be set to an array, where each item is a "
 "schema."
-msgstr ""
+msgstr "これらのキーワードはすべて、個々の項目がスキーマで構成される配列でなければなりません。"
 
 #: ../../source/reference/combining.rst:48
 msgid "In addition, there is:"
-msgstr ""
+msgstr "それからもう一つあります:"
 
 #: ../../source/reference/combining.rst:50
 msgid "`not`: Must *not* be valid against the given schema"
-msgstr ""
+msgstr "`not`: 与えられたスキーマに対して有効で *あってはいけません*"
 
 #: ../../source/reference/combining.rst:59
 msgid "allOf"
-msgstr ""
+msgstr "allOf"
 
 #: ../../source/reference/combining.rst:61
 msgid ""
 "To validate against ``allOf``, the given data must be valid against all "
 "of the given subschemas."
-msgstr ""
+msgstr "``allOf`` に対して有効であることを確認するためには、与えられたデータが指定されたすべてのサブスキーマに対して有効である必要があります。"
 
 #: ../../source/reference/combining.rst:76
 msgid ""
@@ -89,7 +89,7 @@ msgid ""
 "impossibilities with ``allOf``.  The following example creates a schema "
 "that won't validate against anything (since something may not be both a "
 "string and a number at the same time):"
-msgstr ""
+msgstr "``allOf`` では論理的に不可能なスキーマを作ることが非常に簡単なことに注意してください。次の例は（同時に文字列と数値であることはできないので）何に対しても有効にならないスキーマを作ります:"
 
 #: ../../source/reference/combining.rst:93
 msgid ""
@@ -99,14 +99,14 @@ msgid ""
 "details to it in the sense of object-oriented inheritance.  For example, "
 "say you had a schema for an address in a ``definitions`` section, and "
 "want to extend it to include an address type:"
-msgstr ""
+msgstr "`allOf`, `anyOf` または `oneOf` の配列にリストされているスキーマは、お互いに何も関知しないことに注意するのが大切です。驚くべきことかも知れませんが、 `allOf` はオブジェクト指向的継承という感覚でスキーマを\"拡張\"して詳細を追加するために使うことはできません。たとえば ``definitions`` セクションにaddressというスキーマがあり、それをアドレスのtypeを含むように拡張したいとします:"
 
 #: ../../source/reference/combining.rst:130
 msgid ""
 "This works, but what if we wanted to restrict the schema so no additional"
 " properties are allowed?  One might try adding the highlighted line "
 "below:"
-msgstr ""
+msgstr "これは動作しますが、追加のプロパティが許可されないようにスキーマ制限したい場合はどうでしょう？次のように、ハイライトされた行を追加しようとするかも知れません:"
 
 #: ../../source/reference/combining.rst:166
 msgid ""
@@ -114,7 +114,7 @@ msgid ""
 "the `additionalProperties` refers to the entire schema.  And that entire "
 "schema includes no properties, and knows nothing about the properties in "
 "the subschemas inside of the `allOf` array."
-msgstr ""
+msgstr "残念なことに、スキーマは *すべて* を拒否します。これは `additionalProperties` がスキーマ全体を参照するからです。そしてスキーマ全体にはプロパティを含んでおらず、 `allOf` 配列の中のサブスキーマのプロパティについては何も知りません。"
 
 #: ../../source/reference/combining.rst:171
 msgid ""
@@ -122,45 +122,45 @@ msgid ""
 " operations in JSON schema: it does not behave like inheritance in an "
 "object-oriented language.  There are some proposals to address this in "
 "the next version of the JSON schema specification."
-msgstr ""
+msgstr "この、オブジェクト指向言語の継承のようには動作しない、という欠点はおそらくJSONスキーマの組み合わせ操作における最大の驚きの一つです。JSONスキーマ仕様の次のバージョンでは、これらを解決するいくつかの提案があります。"
 
 #: ../../source/reference/combining.rst:183
 msgid "anyOf"
-msgstr ""
+msgstr "anyOf"
 
 #: ../../source/reference/combining.rst:185
 msgid ""
 "To validate against ``anyOf``, the given data must be valid against any "
 "(one or more) of the given subschemas."
-msgstr ""
+msgstr "``anyOf`` に対して有効であることを確認するためには、与えられたデータが指定されたサブスキーマのなにか（一つ以上）に対して有効である必要があります。"
 
 #: ../../source/reference/combining.rst:209
 msgid "oneOf"
-msgstr ""
+msgstr "oneOf"
 
 #: ../../source/reference/combining.rst:211
 msgid ""
 "To validate against ``oneOf``, the given data must be valid against "
 "exactly one of the given subschemas."
-msgstr ""
+msgstr "``oneOf`` に対して有効であることを確認するためには、与えられたデータが指定されたサブスキーマのいずれかただ一つに対して有効である必要があります。"
 
 #: ../../source/reference/combining.rst:214
 msgid "Not a multiple of either 5 or 3."
-msgstr ""
+msgstr "5と3どちらかの倍数ではありません。"
 
 #: ../../source/reference/combining.rst:214
 msgid "Multiple of both 5 and 3 is rejected."
-msgstr ""
+msgstr "5と3 *双方の* 倍数は拒否されます。"
 
 #: ../../source/reference/combining.rst:232
 msgid ""
 "Note that it's possible to \"factor\" out the common parts of the "
 "subschemas.  The following schema is equivalent to the one above:"
-msgstr ""
+msgstr "サブスキーマの共通部分を\"括り\"出せることに注意しましょう。次のスキーマは上と同じです:"
 
 #: ../../source/reference/combining.rst:252
 msgid "not"
-msgstr ""
+msgstr "not"
 
 #: ../../source/reference/combining.rst:254
 msgid ""
@@ -168,11 +168,11 @@ msgid ""
 "along with other things that help to modify the effect of schemas in some"
 " way.  The ``not`` keyword declares that a instance validates if it "
 "doesn't validate against the given subschema."
-msgstr ""
+msgstr "これは厳密にはスキーマを組み合わせるものではありません。しかし、何らかの方法でスキーマの効果を変更する助けをする他のものと一緒にこの章に属しています。 ``not`` キーワードは、指定されたスキーマに対して有効であると確認されなければインスタンスが有効であると確認することを宣言します。"
 
 #: ../../source/reference/combining.rst:259
 msgid ""
 "For example, the following schema validates against anything that is not "
 "a string:"
-msgstr ""
+msgstr "たとえば、次のスキーマは文字列でないものすべてに対して有効であることを確認できます。"
 

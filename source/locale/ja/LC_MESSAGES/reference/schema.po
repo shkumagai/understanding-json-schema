@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Understanding JSON Schema 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:43+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-03-08 11:36+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,87 +21,87 @@ msgstr ""
 
 #: ../../source/reference/schema.rst:8
 msgid "The $schema keyword"
-msgstr ""
+msgstr "$schemaキーワード"
 
 #: ../../source/reference/schema.rst:10
 msgid ""
 "The ``$schema`` keyword is used to declare that a JSON fragment is "
 "actually a piece of JSON Schema.  It also declares which version of the "
 "JSON Schema standard that the schema was written against."
-msgstr ""
+msgstr "``$schema`` キーワードは、JSON断片が実際にJSONスキーマの一部であることを宣言するために使われます。またスキーマがどのJSONスキーマ標準のバージョンを対象に書かれたかも宣言します。"
 
 #: ../../source/reference/schema.rst:14
 msgid ""
 "It is recommended that all JSON Schemas have a ``$schema`` entry, which "
 "must be at the root.  Therefore most of the time, you'll want this at the"
 " root of your schema::"
-msgstr ""
+msgstr "すべてのJSONスキーマは ``$schema`` エントリを持つことを推奨され、それはルートになければなりません。そのため殆どの場合、スキーマのルートにこれが必要になります::"
 
 #: ../../source/reference/schema.rst:21
 msgid "Advanced"
-msgstr ""
+msgstr "もう一歩"
 
 #: ../../source/reference/schema.rst:23
 msgid ""
 "If you need to declare that your schema was written against a specific "
 "version of the JSON Schema standard, and not just the latest version, you"
 " can use one of these predefined values:"
-msgstr ""
+msgstr "スキーマが最新バージョンだけではなく、特定のバージョンのJSONスキーマ標準に対して作成されたことを宣言する必要がある場合には、次のいずれかの値を使用できます。"
 
 #: ../../source/reference/schema.rst:27
 msgid "``http://json-schema.org/schema#``"
-msgstr ""
+msgstr "``http://json-schema.org/schema#``"
 
 #: ../../source/reference/schema.rst:29
 msgid "JSON Schema written against the current version of the specification."
-msgstr ""
+msgstr "現在のバージョンの仕様に対応して書かれたJSONスキーマ。"
 
 #: ../../source/reference/schema.rst:32
 msgid "``http://json-schema.org/hyper-schema#``"
-msgstr ""
+msgstr "``http://json-schema.org/hyper-schema#``"
 
 #: ../../source/reference/schema.rst:34
 msgid ""
 "JSON Schema hyperschema written against the current version of the "
 "specification."
-msgstr ""
+msgstr "現在のバージョンの仕様に対応して書かれたJSONスキーマハイパースキーマ。"
 
 #: ../../source/reference/schema.rst:37
 msgid "``http://json-schema.org/draft-04/schema#``"
-msgstr ""
+msgstr "``http://json-schema.org/draft-04/schema#``"
 
 #: ../../source/reference/schema.rst:39
 msgid "JSON Schema written against this version."
-msgstr ""
+msgstr "このバージョンに対応して書かれたJSONスキーマ。"
 
 #: ../../source/reference/schema.rst:41
 msgid "``http://json-schema.org/draft-04/hyper-schema#``"
-msgstr ""
+msgstr "``http://json-schema.org/draft-04/hyper-schema#``"
 
 #: ../../source/reference/schema.rst:43
 msgid "JSON Schema hyperschema written against this version."
-msgstr ""
+msgstr "このバージョンに対応して書かれたJSONスキーマハイパースキーマ。"
 
 #: ../../source/reference/schema.rst:45
 msgid "``http://json-schema.org/draft-03/schema#``"
-msgstr ""
+msgstr "``http://json-schema.org/draft-03/schema#``"
 
 #: ../../source/reference/schema.rst:47
 msgid "JSON Schema written against JSON Schema, draft v3"
-msgstr ""
+msgstr "JSONスキーマドラフトv3に対応して書かれたJSONスキーマ。"
 
 #: ../../source/reference/schema.rst:49
 msgid "``http://json-schema.org/draft-03/hyper-schema#``"
-msgstr ""
+msgstr "``http://json-schema.org/draft-03/hyper-schema#``"
 
 #: ../../source/reference/schema.rst:51
 msgid "JSON Schema hyperschema written against JSON Schema, draft v3"
-msgstr ""
+msgstr "JSONスキーマドラフトv3に対応して書かれたJSONスキーマハイパースキーマ。"
 
 #: ../../source/reference/schema.rst:53
 msgid ""
 "Additionally, if you have extended the JSON Schema language to include "
 "your own custom keywords for validating values, you can use a custom URI "
 "for ``$schema``.  It must not be one of the predefined values above."
-msgstr ""
+msgstr "さらに値の検証のために独自のカスタムキーワードを含めるようJSONスキーマ言語を拡張した場合は、 ``$schema`` にカスタムURLを使用できます。その値は、上で定義済みの値のどれかであってはいけません。"
 

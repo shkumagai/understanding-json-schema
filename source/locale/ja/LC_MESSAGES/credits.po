@@ -11,7 +11,7 @@ msgstr ""
 "Project-Id-Version: Understanding JSON Schema 1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-27 15:43+0900\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2017-03-08 12:22+0900\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -21,11 +21,11 @@ msgstr ""
 
 #: ../../source/credits.rst:2
 msgid "Acknowledgments"
-msgstr ""
+msgstr "謝辞"
 
 #: ../../source/credits.rst:4
 msgid "Michael Droettboom wishes to thank the following contributors:"
-msgstr ""
+msgstr "Michael Droettboom は次の貢献者の皆さんに感謝します:"
 
 #: ../../source/credits.rst:6
 msgid "Anders D. Johnson"
